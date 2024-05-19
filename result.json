@@ -4,123 +4,172 @@
  "id": 1283644155,
  "messages": [
   {
-   "id": 270,
+   "id": 27036,
    "type": "message",
-   "date": "2024-05-16T17:55:49",
-   "date_unixtime": "1715867749",
-   "edited": "2024-05-16T17:55:52",
-   "edited_unixtime": "1715867752",
-   "from": "Winderton",
-   "from_id": "channel1778051783",
-   "text": [
-    "Народ, Тинькофф запустил свой универ по подготовке всевозможных IT спецов - Центральный университет. (what?)\n\nВроде база, да? Сейчас все топовые конторы в той или иной степени обучают ITшников, но Тинькофф решили пойти ещё дальше.\n\nВо-первых - это универ, полноценный. Ты получаешься диплом о высшем образовании гос образца, который везде котируется, а в дипломе будет написано… (барабанная дробь)\nМАТЕМАТИКА И КОМПЬЮТЕРНЫЕ НАУКИ.\nМясо? Мясо\n\nЯ не знаю, как сейчас у нас в вузах проходит обучение, но Центральный университет напоминает больше западный подход, очень практико-ориентированный:\n- на обучение можно получит грант;\n- есть возможность поменять направление в процессе обучения. Ну и дефолтные плюшки, вроде стажировок на последних курсах, или каждому студенту выдают личного ментора на все обучение. Не просто студента с другого курса, а какого-то профика.\n\n50 челов получат гранты на 100% оплату обучения в бакалавриате, а остальные имеют возможность получить грант на 75% покрытия затрат или меньше. Таких грантов, если что, не ограниченное количество + их не нужно отрабатывать после обучения.\n\nСам вуз в Мск, а оторвать грант можно онлайн.\n\nЕсли ты школяр или где-то в калэдже торчишь - то этот вузик точно как вариант для продолжения. ",
-    {
-     "type": "text_link",
-     "text": "По ссылке",
-     "href": "https://l.tinkoff.ru/wndtngrant"
-    },
-    " регайся на конкурс грантов, чего тянуть! \n\nРеклама. АНО ВО \"Центральный университет\", ИНН ",
-    {
-     "type": "phone",
-     "text": "7743418023"
-    },
-    ", erid: LjN8KKu2j"
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Народ, Тинькофф запустил свой универ по подготовке всевозможных IT спецов - Центральный университет. (what?)\n\nВроде база, да? Сейчас все топовые конторы в той или иной степени обучают ITшников, но Тинькофф решили пойти ещё дальше.\n\nВо-первых - это универ, полноценный. Ты получаешься диплом о высшем образовании гос образца, который везде котируется, а в дипломе будет написано… (барабанная дробь)\nМАТЕМАТИКА И КОМПЬЮТЕРНЫЕ НАУКИ.\nМясо? Мясо\n\nЯ не знаю, как сейчас у нас в вузах проходит обучение, но Центральный университет напоминает больше западный подход, очень практико-ориентированный:\n- на обучение можно получит грант;\n- есть возможность поменять направление в процессе обучения. Ну и дефолтные плюшки, вроде стажировок на последних курсах, или каждому студенту выдают личного ментора на все обучение. Не просто студента с другого курса, а какого-то профика.\n\n50 челов получат гранты на 100% оплату обучения в бакалавриате, а остальные имеют возможность получить грант на 75% покрытия затрат или меньше. Таких грантов, если что, не ограниченное количество + их не нужно отрабатывать после обучения.\n\nСам вуз в Мск, а оторвать грант можно онлайн.\n\nЕсли ты школяр или где-то в калэдже торчишь - то этот вузик точно как вариант для продолжения. "
-    },
-    {
-     "type": "text_link",
-     "text": "По ссылке",
-     "href": "https://l.tinkoff.ru/wndtngrant"
-    },
-    {
-     "type": "plain",
-     "text": " регайся на конкурс грантов, чего тянуть! \n\nРеклама. АНО ВО \"Центральный университет\", ИНН "
-    },
-    {
-     "type": "phone",
-     "text": "7743418023"
-    },
-    {
-     "type": "plain",
-     "text": ", erid: LjN8KKu2j"
-    }
-   ]
-  },
-  {
-   "id": 26935,
-   "type": "message",
-   "date": "2024-05-13T09:03:45",
-   "date_unixtime": "1715576625",
-   "edited": "2024-05-13T09:03:54",
-   "edited_unixtime": "1715576634",
+   "date": "2024-05-19T09:02:05",
+   "date_unixtime": "1716094925",
+   "edited": "2024-05-19T11:16:52",
+   "edited_unixtime": "1716103012",
    "from": "шерстяные проказники • коты",
    "from_id": "channel1283644155",
-   "photo": "photos/photo_3987@13-05-2024_09-03-45.jpg",
-   "width": 510,
-   "height": 496,
-   "text": [
-    "Я каждое утро перед работой🥲\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Я каждое утро перед работой🥲\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26944,
-   "type": "message",
-   "date": "2024-05-13T16:03:17",
-   "date_unixtime": "1715601797",
-   "edited": "2024-05-13T16:03:26",
-   "edited_unixtime": "1715601806",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "file": "video_files/ad10b8a265a3820d1a5221c5415cff45.mp4",
-   "file_name": "ad10b8a265a3820d1a5221c5415cff45.mp4",
-   "thumbnail": "video_files/ad10b8a265a3820d1a5221c5415cff45.mp4_thumb.jpg",
+   "file": "video_files/котизм8721.mp4",
+   "file_name": "котизм8721.mp4",
+   "thumbnail": "video_files/котизм8721.mp4_thumb.jpg",
    "media_type": "video_file",
    "mime_type": "video/mp4",
-   "duration_seconds": 38,
-   "width": 272,
+   "duration_seconds": 2,
+   "width": 720,
+   "height": 1070,
+   "text": [
+    "Начните свой день с лапочных потягушек китика❤️\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "♥️",
+     "document_id": "stickers/sticker.webp"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Шерстяные проказники",
+     "href": "https://t.me/+YyZAC53UIwk4MTFi"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Начните свой день с лапочных потягушек китика❤️\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "♥️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Шерстяные проказники",
+     "href": "https://t.me/+YyZAC53UIwk4MTFi"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 27037,
+   "type": "message",
+   "date": "2024-05-19T11:14:18",
+   "date_unixtime": "1716102858",
+   "edited": "2024-05-19T11:14:26",
+   "edited_unixtime": "1716102866",
+   "from": "шерстяные проказники • коты",
+   "from_id": "channel1283644155",
+   "photo": "photos/photo_4018@19-05-2024_11-14-18.jpg",
+   "width": 1024,
+   "height": 1280,
+   "text": [
+    "Если вы думали, что это отверстие в столе для проводов, то нет😈\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "♥️",
+     "document_id": "stickers/sticker.webp"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Шерстяные проказники",
+     "href": "https://t.me/+YyZAC53UIwk4MTFi"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Если вы думали, что это отверстие в столе для проводов, то нет😈\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "♥️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Шерстяные проказники",
+     "href": "https://t.me/+YyZAC53UIwk4MTFi"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 27038,
+   "type": "message",
+   "date": "2024-05-19T11:14:18",
+   "date_unixtime": "1716102858",
+   "from": "шерстяные проказники • коты",
+   "from_id": "channel1283644155",
+   "photo": "photos/photo_4019@19-05-2024_11-14-18.jpg",
+   "width": 1024,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 27039,
+   "type": "message",
+   "date": "2024-05-19T11:14:18",
+   "date_unixtime": "1716102858",
+   "from": "шерстяные проказники • коты",
+   "from_id": "channel1283644155",
+   "photo": "photos/photo_4020@19-05-2024_11-14-18.jpg",
+   "width": 1024,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 27040,
+   "type": "message",
+   "date": "2024-05-19T11:14:18",
+   "date_unixtime": "1716102858",
+   "from": "шерстяные проказники • коты",
+   "from_id": "channel1283644155",
+   "photo": "photos/photo_4021@19-05-2024_11-14-18.jpg",
+   "width": 1024,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 27041,
+   "type": "message",
+   "date": "2024-05-19T13:01:08",
+   "date_unixtime": "1716109268",
+   "edited": "2024-05-19T13:01:14",
+   "edited_unixtime": "1716109274",
+   "from": "шерстяные проказники • коты",
+   "from_id": "channel1283644155",
+   "file": "video_files/video_2024-05-17_22-24-44.mp4",
+   "file_name": "video_2024-05-17_22-24-44.mp4",
+   "thumbnail": "video_files/video_2024-05-17_22-24-44.mp4_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 35,
+   "width": 378,
    "height": 480,
    "text": [
-    "Как же коты любят споть😴\n\n",
+    "Я: *пытаюсь выспаться в свой законный выходной*\nМой кот, которому скучно:\n\n",
     {
      "type": "custom_emoji",
      "text": "♥️",
@@ -137,7 +186,7 @@
    "text_entities": [
     {
      "type": "plain",
-     "text": "Как же коты любят споть😴\n\n"
+     "text": "Я: *пытаюсь выспаться в свой законный выходной*\nМой кот, которому скучно:\n\n"
     },
     {
      "type": "custom_emoji",
@@ -160,19 +209,155 @@
    ]
   },
   {
-   "id": 26946,
+   "id": 27043,
    "type": "message",
-   "date": "2024-05-13T18:14:18",
-   "date_unixtime": "1715609658",
-   "edited": "2024-05-13T18:14:22",
-   "edited_unixtime": "1715609662",
+   "date": "2024-05-19T15:34:35",
+   "date_unixtime": "1716118475",
+   "edited": "2024-05-19T15:34:48",
+   "edited_unixtime": "1716118488",
    "from": "шерстяные проказники • коты",
    "from_id": "channel1283644155",
-   "photo": "photos/photo_3988@13-05-2024_18-14-18.jpg",
-   "width": 720,
-   "height": 960,
+   "file": "video_files/IMG_2126.MOV",
+   "file_name": "IMG_2126.MOV",
+   "thumbnail": "video_files/IMG_2126.MOV_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 17,
+   "width": 1280,
+   "height": 962,
    "text": [
-    "Да это же сам Кэтмэн😧\n\n",
+    {
+     "type": "text_link",
+     "text": "Мосфильm",
+     "href": "https://t.me/+UMpawf9wdSY5OGUy"
+    },
+    {
+     "type": "bold",
+     "text": " и "
+    },
+    {
+     "type": "text_link",
+     "text": "Союзmультфильm",
+     "href": "https://t.me/+5haLgag1sCY2YmMy"
+    },
+    {
+     "type": "bold",
+     "text": " \nТеперь в Телеграм!"
+    },
+    "\n\nТут собраны ВСЕ наши любимые фильмы и мультфильмы от легендарных студий прямиком из СССР!😍 \n\n",
+    {
+     "type": "bold",
+     "text": "Мосфильm"
+    },
+    " 👉 ",
+    {
+     "type": "link",
+     "text": "https://t.me/+UMpawf9wdSY5OGUy"
+    },
+    "\n",
+    {
+     "type": "bold",
+     "text": "Союзmультфильm"
+    },
+    " 👉 ",
+    {
+     "type": "link",
+     "text": "https://t.me/+5haLgag1sCY2YmMy"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "text_link",
+     "text": "Мосфильm",
+     "href": "https://t.me/+UMpawf9wdSY5OGUy"
+    },
+    {
+     "type": "bold",
+     "text": " и "
+    },
+    {
+     "type": "text_link",
+     "text": "Союзmультфильm",
+     "href": "https://t.me/+5haLgag1sCY2YmMy"
+    },
+    {
+     "type": "bold",
+     "text": " \nТеперь в Телеграм!"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nТут собраны ВСЕ наши любимые фильмы и мультфильмы от легендарных студий прямиком из СССР!😍 \n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Мосфильm"
+    },
+    {
+     "type": "plain",
+     "text": " 👉 "
+    },
+    {
+     "type": "link",
+     "text": "https://t.me/+UMpawf9wdSY5OGUy"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "Союзmультфильm"
+    },
+    {
+     "type": "plain",
+     "text": " 👉 "
+    },
+    {
+     "type": "link",
+     "text": "https://t.me/+5haLgag1sCY2YmMy"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "inline_bot_buttons": [
+    [
+     {
+      "type": "url",
+      "text": "Мосфильm",
+      "data": "https://t.me/+UMpawf9wdSY5OGUy"
+     }
+    ],
+    [
+     {
+      "type": "url",
+      "text": "Союзmультфильm",
+      "data": "https://t.me/+5haLgag1sCY2YmMy"
+     }
+    ]
+   ]
+  },
+  {
+   "id": 27044,
+   "type": "message",
+   "date": "2024-05-19T16:34:11",
+   "date_unixtime": "1716122051",
+   "edited": "2024-05-19T16:34:16",
+   "edited_unixtime": "1716122056",
+   "from": "шерстяные проказники • коты",
+   "from_id": "channel1283644155",
+   "file": "video_files/IMG_5817.MP4",
+   "file_name": "IMG_5817.MP4",
+   "thumbnail": "video_files/IMG_5817.MP4_thumb.jpg",
+   "media_type": "animation",
+   "mime_type": "video/mp4",
+   "duration_seconds": 6,
+   "width": 720,
+   "height": 1280,
+   "text": [
+    "Красивое😍\n\n",
     {
      "type": "custom_emoji",
      "text": "♥️",
@@ -189,7 +374,7 @@
    "text_entities": [
     {
      "type": "plain",
-     "text": "Да это же сам Кэтмэн😧\n\n"
+     "text": "Красивое😍\n\n"
     },
     {
      "type": "custom_emoji",
@@ -212,98 +397,862 @@
    ]
   },
   {
-   "id": 26947,
+   "id": 27045,
    "type": "message",
-   "date": "2024-05-13T18:14:18",
-   "date_unixtime": "1715609658",
+   "date": "2024-05-19T17:51:25",
+   "date_unixtime": "1716126685",
+   "edited": "2024-05-19T17:51:28",
+   "edited_unixtime": "1716126688",
    "from": "шерстяные проказники • коты",
    "from_id": "channel1283644155",
-   "photo": "photos/photo_3989@13-05-2024_18-14-18.jpg",
-   "width": 720,
-   "height": 960,
-   "text": "",
-   "text_entities": []
+   "file": "video_files/video_123@19-05-2024_17-51-25.mp4",
+   "thumbnail": "video_files/video_123@19-05-2024_17-51-25.mp4_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 13,
+   "width": 464,
+   "height": 848,
+   "text": [
+    "Грустно, но вкусно🥲\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "♥️",
+     "document_id": "stickers/sticker.webp"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Шерстяные проказники",
+     "href": "https://t.me/+YyZAC53UIwk4MTFi"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Грустно, но вкусно🥲\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "♥️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Шерстяные проказники",
+     "href": "https://t.me/+YyZAC53UIwk4MTFi"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
   },
   {
-   "id": 26948,
+   "id": 27046,
    "type": "message",
-   "date": "2024-05-13T18:14:18",
-   "date_unixtime": "1715609658",
+   "date": "2024-05-19T19:13:13",
+   "date_unixtime": "1716131593",
+   "edited": "2024-05-19T19:13:18",
+   "edited_unixtime": "1716131598",
    "from": "шерстяные проказники • коты",
    "from_id": "channel1283644155",
-   "photo": "photos/photo_3990@13-05-2024_18-14-18.jpg",
-   "width": 720,
-   "height": 960,
-   "text": "",
-   "text_entities": []
+   "file": "video_files/IMG_5345.MP4",
+   "file_name": "IMG_5345.MP4",
+   "thumbnail": "video_files/IMG_5345.MP4_thumb.jpg",
+   "media_type": "animation",
+   "mime_type": "video/mp4",
+   "duration_seconds": 7,
+   "width": 640,
+   "height": 830,
+   "text": [
+    "Слыш, цветок, ты быканул или мне показалось🧐\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "♥️",
+     "document_id": "stickers/sticker.webp"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Шерстяные проказники",
+     "href": "https://t.me/+YyZAC53UIwk4MTFi"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Слыш, цветок, ты быканул или мне показалось🧐\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "♥️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Шерстяные проказники",
+     "href": "https://t.me/+YyZAC53UIwk4MTFi"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
   },
   {
-   "id": 25519,
+   "id": 27047,
    "type": "message",
-   "date": "2024-05-15T21:26:54",
-   "date_unixtime": "1715794014",
-   "from": "QuickNRap Video",
-   "from_id": "channel1314319300",
-   "file": "video_files/IMG_5190.MOV",
-   "file_name": "IMG_5190.MOV",
-   "thumbnail": "video_files/IMG_5190.MOV_thumb.jpg",
+   "date": "2024-05-19T20:06:01",
+   "date_unixtime": "1716134761",
+   "edited": "2024-05-19T20:06:07",
+   "edited_unixtime": "1716134767",
+   "from": "шерстяные проказники • коты",
+   "from_id": "channel1283644155",
+   "file": "video_files/IMG_2905.MP4",
+   "file_name": "IMG_2905.MP4",
+   "thumbnail": "video_files/IMG_2905.MP4_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 37,
+   "width": 480,
+   "height": 480,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Вы думаете, что любите кошек?"
+    },
+    "\n\nНо вы не знаете и 5% того, на что способны их старшие собратья!\n\n",
+    {
+     "type": "text_link",
+     "text": "🐯",
+     "href": "https://t.me/+s1Hq1yaQwaE5ZDBi"
+    },
+    {
+     "type": "text_link",
+     "text": " ",
+     "href": "https://t.me/+s1Hq1yaQwaE5ZDBi"
+    },
+    {
+     "type": "text_link",
+     "text": "Хищные кошки",
+     "href": "https://t.me/+J_w8ljheQhE3NDgy"
+    },
+    " — сборник самых редких и красивых кадров с ними!\n\n",
+    {
+     "type": "bold",
+     "text": "Гарантируем, такими кошек вы ещё не видели - "
+    },
+    {
+     "type": "text_link",
+     "text": "ПЕРЕЙТИ",
+     "href": "https://t.me/+7tsPQPkXVacyNDgy"
+    },
+    " 👇"
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Вы думаете, что любите кошек?"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nНо вы не знаете и 5% того, на что способны их старшие собратья!\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "🐯",
+     "href": "https://t.me/+s1Hq1yaQwaE5ZDBi"
+    },
+    {
+     "type": "text_link",
+     "text": " ",
+     "href": "https://t.me/+s1Hq1yaQwaE5ZDBi"
+    },
+    {
+     "type": "text_link",
+     "text": "Хищные кошки",
+     "href": "https://t.me/+J_w8ljheQhE3NDgy"
+    },
+    {
+     "type": "plain",
+     "text": " — сборник самых редких и красивых кадров с ними!\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Гарантируем, такими кошек вы ещё не видели - "
+    },
+    {
+     "type": "text_link",
+     "text": "ПЕРЕЙТИ",
+     "href": "https://t.me/+7tsPQPkXVacyNDgy"
+    },
+    {
+     "type": "plain",
+     "text": " 👇"
+    }
+   ],
+   "inline_bot_buttons": [
+    [
+     {
+      "type": "url",
+      "text": "🐆 Подписаться",
+      "data": "https://t.me/+J_w8ljheQhE3NDgy"
+     }
+    ],
+    [
+     {
+      "type": "url",
+      "text": "👀 Посмотреть",
+      "data": "https://t.me/+J_w8ljheQhE3NDgy"
+     }
+    ]
+   ]
+  },
+  {
+   "id": 27048,
+   "type": "message",
+   "date": "2024-05-19T21:06:40",
+   "date_unixtime": "1716138400",
+   "edited": "2024-05-19T21:06:47",
+   "edited_unixtime": "1716138407",
+   "from": "шерстяные проказники • коты",
+   "from_id": "channel1283644155",
+   "file": "video_files/IMG_5835.MP4",
+   "file_name": "IMG_5835.MP4",
+   "thumbnail": "video_files/IMG_5835.MP4_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 6,
+   "width": 720,
+   "height": 1280,
+   "text": [
+    "Когда психанула и сама себе рубанула чёлку:\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "♥️",
+     "document_id": "stickers/sticker.webp"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Шерстяные проказники",
+     "href": "https://t.me/+YyZAC53UIwk4MTFi"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Когда психанула и сама себе рубанула чёлку:\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "♥️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Шерстяные проказники",
+     "href": "https://t.me/+YyZAC53UIwk4MTFi"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 27049,
+   "type": "message",
+   "date": "2024-05-19T22:32:05",
+   "date_unixtime": "1716143525",
+   "edited": "2024-05-19T22:32:08",
+   "edited_unixtime": "1716143528",
+   "from": "шерстяные проказники • коты",
+   "from_id": "channel1283644155",
+   "file": "video_files/котизм69277.mp4",
+   "file_name": "котизм69277.mp4",
+   "thumbnail": "video_files/котизм69277.mp4_thumb.jpg",
    "media_type": "video_file",
    "mime_type": "video/mp4",
    "duration_seconds": 15,
    "width": 720,
    "height": 1280,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 25520,
-   "type": "message",
-   "date": "2024-05-15T21:26:54",
-   "date_unixtime": "1715794014",
-   "from": "QuickNRap Video",
-   "from_id": "channel1314319300",
-   "file": "video_files/IMG_5163.MP4",
-   "file_name": "IMG_5163.MP4",
-   "thumbnail": "video_files/IMG_5163.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 5,
-   "width": 720,
-   "height": 1280,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 25521,
-   "type": "message",
-   "date": "2024-05-15T21:26:54",
-   "date_unixtime": "1715794014",
-   "from": "QuickNRap Video",
-   "from_id": "channel1314319300",
-   "file": "video_files/IMG_4989.MP4",
-   "file_name": "IMG_4989.MP4",
-   "thumbnail": "video_files/IMG_4989.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 9,
-   "width": 464,
-   "height": 848,
    "text": [
-    "🎥 Видео из сторис (15.05)\n\nНовостной канал ",
+    "Как же коты любят коробки, даже воображаемые😅\n\n",
     {
-     "type": "mention",
-     "text": "@quicknrap_news"
+     "type": "custom_emoji",
+     "text": "♥️",
+     "document_id": "stickers/sticker.webp"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Шерстяные проказники",
+     "href": "https://t.me/+YyZAC53UIwk4MTFi"
     },
     ""
    ],
    "text_entities": [
     {
      "type": "plain",
-     "text": "🎥 Видео из сторис (15.05)\n\nНовостной канал "
+     "text": "Как же коты любят коробки, даже воображаемые😅\n\n"
     },
     {
-     "type": "mention",
-     "text": "@quicknrap_news"
+     "type": "custom_emoji",
+     "text": "♥️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Шерстяные проказники",
+     "href": "https://t.me/+YyZAC53UIwk4MTFi"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 3213,
+   "type": "message",
+   "date": "2024-05-19T09:02:01",
+   "date_unixtime": "1716094921",
+   "edited": "2024-05-19T09:02:11",
+   "edited_unixtime": "1716094931",
+   "from": "Пёсельная",
+   "from_id": "channel1972830020",
+   "file": "video_files/IMG_8549.MP4",
+   "file_name": "IMG_8549.MP4",
+   "thumbnail": "video_files/IMG_8549.MP4_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 10,
+   "width": 352,
+   "height": 640,
+   "text": [
+    "Очень крепкий сон😊\n\n",
+    {
+     "type": "text_link",
+     "text": "Пёсельная",
+     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Очень крепкий сон😊\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "Пёсельная",
+     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 3214,
+   "type": "message",
+   "date": "2024-05-19T11:03:07",
+   "date_unixtime": "1716102187",
+   "edited": "2024-05-19T11:03:28",
+   "edited_unixtime": "1716102208",
+   "from": "Пёсельная",
+   "from_id": "channel1972830020",
+   "file": "video_files/IMG_8554.MP4",
+   "file_name": "IMG_8554.MP4",
+   "thumbnail": "video_files/IMG_8554.MP4_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 10,
+   "width": 352,
+   "height": 640,
+   "text": [
+    "Что происходит?🤣\n\n",
+    {
+     "type": "text_link",
+     "text": "Пёсельная",
+     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Что происходит?🤣\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "Пёсельная",
+     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 3215,
+   "type": "message",
+   "date": "2024-05-19T13:01:04",
+   "date_unixtime": "1716109264",
+   "edited": "2024-05-19T13:01:11",
+   "edited_unixtime": "1716109271",
+   "from": "Пёсельная",
+   "from_id": "channel1972830020",
+   "file": "video_files/IMG_6320.MP4",
+   "file_name": "IMG_6320.MP4",
+   "thumbnail": "video_files/IMG_6320.MP4_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 6,
+   "width": 352,
+   "height": 640,
+   "text": [
+    "Какая необычная дружба🙈\n\n",
+    {
+     "type": "text_link",
+     "text": "Пёсельная",
+     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Какая необычная дружба🙈\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "Пёсельная",
+     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 3216,
+   "type": "message",
+   "date": "2024-05-19T15:01:03",
+   "date_unixtime": "1716116463",
+   "edited": "2024-05-19T15:01:13",
+   "edited_unixtime": "1716116473",
+   "from": "Пёсельная",
+   "from_id": "channel1972830020",
+   "file": "video_files/IMG_6431.MP4",
+   "file_name": "IMG_6431.MP4",
+   "thumbnail": "video_files/IMG_6431.MP4_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 16,
+   "width": 512,
+   "height": 640,
+   "text": [
+    "И хочется, и колется🤣\n\n",
+    {
+     "type": "text_link",
+     "text": "Пёсельная",
+     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "И хочется, и колется🤣\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "Пёсельная",
+     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 3217,
+   "type": "message",
+   "date": "2024-05-19T17:04:10",
+   "date_unixtime": "1716123850",
+   "edited": "2024-05-19T17:04:27",
+   "edited_unixtime": "1716123867",
+   "from": "Пёсельная",
+   "from_id": "channel1972830020",
+   "file": "video_files/IMG_6384.MP4",
+   "file_name": "IMG_6384.MP4",
+   "thumbnail": "video_files/IMG_6384.MP4_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 23,
+   "width": 352,
+   "height": 640,
+   "text": [
+    "Ему вообще по барабану на ваши пылесосы🤣🤣🤣\n\n",
+    {
+     "type": "text_link",
+     "text": "Пёсельная",
+     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ему вообще по барабану на ваши пылесосы🤣🤣🤣\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "Пёсельная",
+     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 3218,
+   "type": "message",
+   "date": "2024-05-19T19:01:03",
+   "date_unixtime": "1716130863",
+   "edited": "2024-05-19T19:01:19",
+   "edited_unixtime": "1716130879",
+   "from": "Пёсельная",
+   "from_id": "channel1972830020",
+   "file": "video_files/IMG_6288.MP4",
+   "file_name": "IMG_6288.MP4",
+   "thumbnail": "video_files/IMG_6288.MP4_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 12,
+   "width": 352,
+   "height": 640,
+   "text": [
+    "Утомился и уснул малыш☺️\n\n",
+    {
+     "type": "text_link",
+     "text": "Пёсельная",
+     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Утомился и уснул малыш☺️\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "Пёсельная",
+     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 3219,
+   "type": "message",
+   "date": "2024-05-19T21:07:11",
+   "date_unixtime": "1716138431",
+   "edited": "2024-05-19T21:12:18",
+   "edited_unixtime": "1716138738",
+   "from": "Пёсельная",
+   "from_id": "channel1972830020",
+   "file": "video_files/IMG_0486.MP4",
+   "file_name": "IMG_0486.MP4",
+   "thumbnail": "video_files/IMG_0486.MP4_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 35,
+   "width": 720,
+   "height": 834,
+   "text": [
+    {
+     "type": "text_link",
+     "text": "National Geographic",
+     "href": "https://t.me/+OaQJrMzHJbUzNjEy"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "теперь в Telegram.\n\n"
+    },
+    "Только тут ты сможешь наблюдать за удивительными моментами жизни животных. 🌍 Сможешь посмотреть на уникальные природные явления, увидеть cамые интересные факты и фото о мире."
+   ],
+   "text_entities": [
+    {
+     "type": "text_link",
+     "text": "National Geographic",
+     "href": "https://t.me/+OaQJrMzHJbUzNjEy"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "теперь в Telegram.\n\n"
+    },
+    {
+     "type": "plain",
+     "text": "Только тут ты сможешь наблюдать за удивительными моментами жизни животных. 🌍 Сможешь посмотреть на уникальные природные явления, увидеть cамые интересные факты и фото о мире."
+    }
+   ],
+   "inline_bot_buttons": [
+    [
+     {
+      "type": "url",
+      "text": "Подписаться 🗺",
+      "data": "https://t.me/+OaQJrMzHJbUzNjEy"
+     }
+    ],
+    [
+     {
+      "type": "url",
+      "text": "Перейти на канал🐌",
+      "data": "https://t.me/+OaQJrMzHJbUzNjEy"
+     }
+    ]
+   ]
+  },
+  {
+   "id": 3220,
+   "type": "message",
+   "date": "2024-05-19T22:07:03",
+   "date_unixtime": "1716142023",
+   "edited": "2024-05-19T22:08:09",
+   "edited_unixtime": "1716142089",
+   "from": "Пёсельная",
+   "from_id": "channel1972830020",
+   "file": "video_files/IMG_9098.MP4",
+   "file_name": "IMG_9098.MP4",
+   "thumbnail": "video_files/IMG_9098.MP4_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 28,
+   "width": 480,
+   "height": 592,
+   "text": [
+    "Обученный песель😅\n\n",
+    {
+     "type": "text_link",
+     "text": "Пёсельная",
+     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Обученный песель😅\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "Пёсельная",
+     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 3701,
+   "type": "message",
+   "date": "2024-05-19T10:11:33",
+   "date_unixtime": "1716099093",
+   "edited": "2024-05-19T10:12:09",
+   "edited_unixtime": "1716099129",
+   "from": "Пёсик",
+   "from_id": "channel1709302416",
+   "file": "video_files/IMG_7867.MOV",
+   "file_name": "IMG_7867.MOV",
+   "thumbnail": "video_files/IMG_7867.MOV_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 14,
+   "width": 960,
+   "height": 1280,
+   "text": [
+    "Интересно, салон в каком состоянии после этой разборки😂\n\n",
+    {
+     "type": "text_link",
+     "text": "Пёсик",
+     "href": "https://t.me/+UjO2WgBOuRFmMGMy"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Интересно, салон в каком состоянии после этой разборки😂\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "Пёсик",
+     "href": "https://t.me/+UjO2WgBOuRFmMGMy"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 3702,
+   "type": "message",
+   "date": "2024-05-19T14:11:51",
+   "date_unixtime": "1716113511",
+   "edited": "2024-05-19T14:12:00",
+   "edited_unixtime": "1716113520",
+   "from": "Пёсик",
+   "from_id": "channel1709302416",
+   "file": "video_files/IMG_7866.MOV",
+   "file_name": "IMG_7866.MOV",
+   "thumbnail": "video_files/IMG_7866.MOV_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 7,
+   "width": 1008,
+   "height": 1280,
+   "text": [
+    "Попытка – не пытка😁\n\n",
+    {
+     "type": "text_link",
+     "text": "Пёсик",
+     "href": "https://t.me/+UjO2WgBOuRFmMGMy"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Попытка – не пытка😁\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "Пёсик",
+     "href": "https://t.me/+UjO2WgBOuRFmMGMy"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 3703,
+   "type": "message",
+   "date": "2024-05-19T16:04:36",
+   "date_unixtime": "1716120276",
+   "edited": "2024-05-19T16:04:52",
+   "edited_unixtime": "1716120292",
+   "from": "Пёсик",
+   "from_id": "channel1709302416",
+   "file": "video_files/IMG_7868.MOV",
+   "file_name": "IMG_7868.MOV",
+   "thumbnail": "video_files/IMG_7868.MOV_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 9,
+   "width": 960,
+   "height": 1280,
+   "text": [
+    "Теперь это его диван😂\n\n",
+    {
+     "type": "text_link",
+     "text": "Пёсик",
+     "href": "https://t.me/+UjO2WgBOuRFmMGMy"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Теперь это его диван😂\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "Пёсик",
+     "href": "https://t.me/+UjO2WgBOuRFmMGMy"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 3704,
+   "type": "message",
+   "date": "2024-05-19T20:34:09",
+   "date_unixtime": "1716136449",
+   "edited": "2024-05-19T20:34:11",
+   "edited_unixtime": "1716136451",
+   "from": "Пёсик",
+   "from_id": "channel1709302416",
+   "file": "video_files/IMG_7869.MOV",
+   "file_name": "IMG_7869.MOV",
+   "thumbnail": "video_files/IMG_7869.MOV_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 6,
+   "width": 960,
+   "height": 1280,
+   "text": [
+    "В каждой собачьей семье😆\n\n",
+    {
+     "type": "text_link",
+     "text": "Пёсик",
+     "href": "https://t.me/+UjO2WgBOuRFmMGMy"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "В каждой собачьей семье😆\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "Пёсик",
+     "href": "https://t.me/+UjO2WgBOuRFmMGMy"
     },
     {
      "type": "plain",

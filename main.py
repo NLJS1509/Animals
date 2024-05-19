@@ -1,15 +1,14 @@
 from aiogram import Bot, Dispatcher
-from aiogram.methods import DeleteWebhook
 from aiogram.client.bot import DefaultBotProperties
 from aiogram.types import FSInputFile
 from aiogram.utils.media_group import MediaGroupBuilder
-from aiogram.methods.send_media_group import SendMediaGroup
 
 import asyncio
 import logging
 import time
 import json
 import re
+import random
 
 logging.basicConfig(level=logging.INFO)
 
@@ -24,6 +23,9 @@ async def send_message():
 
     with open("result.json", encoding="utf8") as result:
         posts = json.load(result)
+
+        #shuffle
+        random.shuffle(posts["messages"])
 
     temp = {}
 
@@ -68,10 +70,10 @@ async def send_message():
                 path = post["file"]
                 try:
                     caption = post["text"][0]
-                    await bot.send_video(channel_id, FSInputFile(path), caption=caption)
+                    await bot.send_video(channel_id, FSInputFile(path), caption=caption, width=post["width"], height=post["height"], thumbnail=FSInputFile(post["thumbnail"]))
                     del temp[post["date_unixtime"]]
                 except:
-                    await bot.send_video(channel_id, FSInputFile(path))
+                    await bot.send_video(channel_id, FSInputFile(path), width=post["width"], height=post["height"], thumbnail=FSInputFile(post["thumbnail"]))
                     del temp[post["date_unixtime"]]
             elif post_type == "text":
                 text = post["text"][0]
@@ -103,7 +105,7 @@ async def send_message():
                     caption = post["text"][0]
                     mg.add(type="video", media=FSInputFile(path), width=post["width"], height=post["height"], caption=caption, thumbnail=FSInputFile(post["thumbnail"]))
                 except:
-                    mg.add(type="video", media=FSInputFile(path), width=post["width"], height=post["height"], thumbnail=post["thumbnail"])
+                    mg.add(type="video", media=FSInputFile(path), width=post["width"], height=post["height"], thumbnail=FSInputFile(post["thumbnail"]))
 
             quantity -= 1
             temp[post["date_unixtime"]] = f"{quantity}, MG"
@@ -112,6 +114,7 @@ async def send_message():
                 await bot.send_media_group(channel_id, mg.build())
                 a = 0
                 del temp[post["date_unixtime"]]
+
 
 async def main():
     try:
