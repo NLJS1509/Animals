@@ -9,6 +9,7 @@ import json
 import re
 import random
 import os
+import time
 
 logging.basicConfig(level=logging.INFO)
 
@@ -20,34 +21,35 @@ dp = Dispatcher()
 
 async def send_message():
     a = 0
+    b = -1
     temp = {}
 
     with open("result.json", encoding="utf8") as result:
         posts = json.load(result)
 
         # Shuffle
-        random.shuffle(posts["messages"])
+        # random.shuffle(posts["messages"])
 
-        json.dump(posts["messages"], result)
+        # json.dump(posts["messages"], result)
 
     # removal of advertising
     for post in posts["messages"]:
-        # inline button
-        if post["inline_bot_buttons"] is not None:
-            if "photo" in post:
-                os.remove(post["photo"])
-            elif "media_type" in post:
-                os.remove(post["file"])
-                os.remove(post["thumbnail"])
-            del post
-
-        elif
+        try:
+            # inline button
+            if post["inline_bot_buttons"] is not None:
+                if "photo" in post:
+                    os.remove(post["photo"])
+                elif "media_type" in post:
+                    os.remove(post["file"])
+                    os.remove(post["thumbnail"])
+                del posts["messages"][post]
+        except:
+            pass
 
 
     # MediaGroup mark
     for post in posts["messages"]:
-        time = post["date_unixtime"]
-        temp[time] = temp.get(time, 0) + 1
+        temp[post["date_unixtime"]] = temp.get(post["date_unixtime"], 0) + 1
 
     for post in posts["messages"]:
 
@@ -75,10 +77,12 @@ async def send_message():
                     await bot.send_photo(channel_id, FSInputFile(path), caption=caption)
                     del temp[post["date_unixtime"]]
                     os.remove(path)
+                    time.sleep(5)
                 except:
                     await bot.send_photo(channel_id, FSInputFile(path))
                     del temp[post["date_unixtime"]]
                     os.remove(path)
+                    time.sleep(5)
             elif post_type == "video":
                 path = post["file"]
                 try:
@@ -86,12 +90,16 @@ async def send_message():
                     await bot.send_video(channel_id, FSInputFile(path), caption=caption, width=post["width"],
                                          height=post["height"], thumbnail=FSInputFile(post["thumbnail"]))
                     del temp[post["date_unixtime"]]
+                    os.remove(post["thumbnail"])
                     os.remove(path)
+                    time.sleep(5)
                 except:
                     await bot.send_video(channel_id, FSInputFile(path), width=post["width"], height=post["height"],
                                          thumbnail=FSInputFile(post["thumbnail"]))
                     del temp[post["date_unixtime"]]
+                    os.remove(post["thumbnail"])
                     os.remove(path)
+                    time.sleep(5)
             elif post_type == "text":
                 text = post["text"][0]
                 await bot.send_message(channel_id, text)
@@ -136,6 +144,7 @@ async def send_message():
                 await bot.send_media_group(channel_id, mg.build())
                 del temp[post["date_unixtime"]]
                 a = 0
+                time.sleep(5)
 
 
 async def main():
