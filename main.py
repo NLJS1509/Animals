@@ -85,17 +85,17 @@ async def send_message():
     time = await db.get_time()
 
     # Если время 00, то бот уходит на перерыв на 9 часов
-    d = datetime.datetime.now()
-    if pytz.timezone('Europe/Moscow').localize(d).strftime('%H:%M') == time[0]:
+    d = pytz.timezone('Europe/Moscow').localize(datetime.datetime.now()).strftime('%H:%M')
+    if d == time[0]:
         await bot.send_message(498975827, "Бот спит", disable_notification=True)
         await db.set_launched(0)
         await asyncio.sleep(32400)
 
     if delete[0] == 1:
-        await bot.send_message(498975827, f"Рассылка запущена!\nВсего постов: <b>{len(date)}</b> шт.\nПериод рассылки: <b>{period[0]}</b> сек. ({round(int(period[0])/60, 1)} мин.)\nУдаление медиа: <b>включено</b>")
+        await bot.send_message(498975827, f"Рассылка запущена!\nВсего постов: <b>{len(date)}</b> шт.\nПериод рассылки: <b>{period[0]}</b> сек. ({round(int(period[0])/60, 1)} мин.)\nУдаление медиа: <b>включено</b>\nБот уходит спать в: <b>{time[0]}</b>")
     else:
         await bot.send_message(498975827,
-                               f"Рассылка запущена!\nВсего постов: <b>{len(date)}</b> шт.\nПериод рассылки: <b>{period[0]}</b> сек. ({round(int(period[0])/60, 1)} мин.)\nУдаление медиа: <b>отключено</b>")
+                               f"Рассылка запущена!\nВсего постов: <b>{len(date)}</b> шт.\nПериод рассылки: <b>{period[0]}</b> сек. ({round(int(period[0])/60, 1)} мин.)\nУдаление медиа: <b>отключено</b>\nБот уходит спать в: <b>{time[0]}</b>")
 
     # # Shuffle
     # random.shuffle(posts_clear["messages"])
@@ -117,8 +117,7 @@ async def send_message():
                 period = 600
 
             # Если время 00, то бот уходит на перерыв на 9 часов
-            d = datetime.datetime.now()
-            if pytz.timezone('Europe/Moscow').localize(d).strftime('%H:%M') == time[0]:
+            if d == time[0]:
                 await bot.send_photo(channel_id, FSInputFile("media/photo.jpg"), caption="Слатких снов <3")
                 await bot.send_message(498975827, "🔵 [INFO] Я ушел спать! Буду через 9 часов", disable_notification=True)
                 await asyncio.sleep(32400)

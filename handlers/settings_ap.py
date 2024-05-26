@@ -12,8 +12,13 @@ from aiogram.fsm.context import FSMContext
 @dp.message(Command('ap'))
 async def settings_newsletter(msg: types.Message):
     if msg.from_user.id == 498975827:
-        await db.set_delete(1)
-        admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🟢"
+        delete = await db.get_delete()
+
+        if delete[0] == 1:
+            admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🟢"
+        else:
+            admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🔴"
+
         launch = await db.get_launched()
         if launch[0] == 1:
             admin_panel.inline_keyboard[3][0].text = "Закончить рассылку"
@@ -26,13 +31,17 @@ async def settings_newsletter(msg: types.Message):
 @dp.callback_query(F.data.startswith('restart'))
 async def restart(call: types.CallbackQuery):
     if call.from_user.id == 498975827:
-        await db.set_launched(0)
-        await db.set_stop(0)
-        await db.set_delete(0)
-        admin_panel.inline_keyboard[3][0].text = "Начать рассылку"
-        admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🔴"
-        await call.message.edit_reply_markup(reply_markup=admin_panel)
-        await call.answer("Все сброшено!")
+        launch = await db.get_launched()
+        if launch[0] == 1:
+            await call.answer(text="Сброс невозможен, так как включена рассылка!")
+        else:
+            await db.set_stop(0)
+            await db.set_delete(0)
+            if admin_panel.inline_keyboard[2][0].text != "Удаление медиа 🔴":
+                admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🔴"
+                await call.message.edit_reply_markup(reply_markup=admin_panel)
+            await call.answer("Данные сброшены!")
+
 
 
 # Начать рассылку
@@ -58,12 +67,11 @@ async def start(call: types.CallbackQuery):
         await db.set_stop(1)
 
 
-
 # Установить период рассылки
 @dp.callback_query(F.data.startswith('mailing_period'))
 async def mailing_period(call: types.CallbackQuery, state: FSMContext):
     period = await db.get_period()
-    await call.message.answer(f"В данный момент установлен период: <b>{period[0]}</b> сек.\nОтправь новый период рассылки в <b>СЕКУНДАХ</b>", )
+    await call.message.answer(f"В данный момент установлен период: <b>{period[0]}</b> сек. ({round(int(period[0])/60, 1)} мин.)\nОтправь новый период рассылки в <b>СЕКУНДАХ</b>", )
     await state.set_state(UserState.wait_send_seconds)
 
 
@@ -81,16 +89,20 @@ async def mailing_period_2(msg: types.Message, state: FSMContext):
 @dp.callback_query(F.data.startswith('delete'))
 async def stop_func(call: types.CallbackQuery):
     delete = await db.get_delete()
-    if delete[0] == 0:
-        await db.set_delete(1)
-        admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🟢"
-        await call.message.edit_reply_markup(reply_markup=admin_panel)
-        await call.answer("Удаление медиа включено!")
+    launch = await db.get_launched()
+    if launch[0] == 1:
+        await call.answer(text="Удаление невозможно, так как включена рассылка!")
     else:
-        await db.set_delete(0)
-        admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🔴"
-        await call.message.edit_reply_markup(reply_markup=admin_panel)
-        await call.answer("Удаление медиа отключено!")
+        if delete[0] == 0:
+            await db.set_delete(1)
+            admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🟢"
+            await call.message.edit_reply_markup(reply_markup=admin_panel)
+            await call.answer("Удаление медиа включено!")
+        else:
+            await db.set_delete(0)
+            admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🔴"
+            await call.message.edit_reply_markup(reply_markup=admin_panel)
+            await call.answer("Удаление медиа отключено!")
 
 
 # Добавить в WL
