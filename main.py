@@ -286,7 +286,7 @@ async def send_message():
 
     stop = await db.get_stop()
     if stop[0] == 0:
-        await bot.send_message(498975827, "🔴 ПОСТЫ ЗАКОНЧИЛИСЬ ❗️")
+        await bot.send_message(498975827, "🔴[INFO] ПОСТЫ ЗАКОНЧИЛИСЬ ❗️")
     await db.set_launched(0)
     await db.set_stop(0)
 
