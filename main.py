@@ -13,7 +13,7 @@ import time
 
 logging.basicConfig(level=logging.INFO)
 
-channel_id = -1002042076267
+channel_id = -1001318027822
 
 bot = Bot("7077531566:AAG8BoIxXmjy-A7t7O9T9iMdzJvBI3Iqqlo", default=DefaultBotProperties(parse_mode="HTML"))
 dp = Dispatcher()
@@ -21,37 +21,64 @@ dp = Dispatcher()
 
 async def send_message():
     a = 0
-    b = -1
-    temp = {}
+    date = {}
+    white_list = ['https://t.me/hedgehogiki', 'https://t.me/+EdTVCcf9RTVkZjZi', 'https://t.me/+jY-C4oLVuJZiZjQy',
+                  'https://t.me/+YyZAC53UIwk4MTFi']
+    posts_clear = {"messages": []}
 
+    # open json
     with open("result.json", encoding="utf8") as result:
-        posts = json.load(result)
-
-        # Shuffle
-        # random.shuffle(posts["messages"])
-
-        # json.dump(posts["messages"], result)
+        posts_json = json.load(result)
 
     # removal of advertising
-    for post in posts["messages"]:
+    for post in posts_json["messages"]:
         try:
             # inline button
-            if post["inline_bot_buttons"] is not None:
+            if "inline_bot_buttons" in post or post["text_entities"][0]["href"] not in white_list:
                 if "photo" in post:
-                    os.remove(post["photo"])
+                    try:
+                        pass
+                        os.remove(post["photo"])
+                    except FileNotFoundError:
+                        logging.warning(f"File '{post['photo']}' not found !!!")
                 elif "media_type" in post:
-                    os.remove(post["file"])
-                    os.remove(post["thumbnail"])
-                del posts["messages"][post]
+                    try:
+                        pass
+                        os.remove(post["file"])
+                        os.remove(post["thumbnail"])
+                    except FileNotFoundError:
+                        logging.warning(f"File '{post['file']}' not found !!!")
+            else:
+                posts_clear["messages"].append(post)
         except:
-            pass
-
+            try:
+                if post["text_entities"][1]["href"] not in white_list:
+                    if "photo" in post:
+                        try:
+                            os.remove(post["photo"])
+                        except FileNotFoundError:
+                            logging.warning(f"File '{post['photo']}' not found !!!")
+                    elif "media_type" in post:
+                        try:
+                            pass
+                            os.remove(post["file"])
+                            os.remove(post["thumbnail"])
+                        except FileNotFoundError:
+                            logging.warning(f"File '{post['file']}' not found !!!")
+                else:
+                    posts_clear["messages"].append(post)
+            except:
+                posts_clear["messages"].append(post)
 
     # MediaGroup mark
-    for post in posts["messages"]:
-        temp[post["date_unixtime"]] = temp.get(post["date_unixtime"], 0) + 1
+    for post in posts_clear["messages"]:
+        date[post["date_unixtime"]] = date.get(post["date_unixtime"], 0) + 1
 
-    for post in posts["messages"]:
+    # Shuffle
+    random.shuffle(posts_clear["messages"])
+
+    # Send message
+    for post in posts_clear["messages"]:
 
         # Message type
         if "photo" in post:
@@ -61,52 +88,74 @@ async def send_message():
         else:
             post_type = "text"
 
-        if isinstance(temp[post["date_unixtime"]], int):
-            temp[post["date_unixtime"]] = str(temp[post["date_unixtime"]])
+        if isinstance(date[post["date_unixtime"]], int):
+            date[post["date_unixtime"]] = str(date[post["date_unixtime"]])
 
         # MediaGroup add mark
-        if temp[post["date_unixtime"]] != "1" and temp[post["date_unixtime"]][-1] != "G":
-            temp[post["date_unixtime"]] = f"{temp[post['date_unixtime']]}, MG"
+        if date[post["date_unixtime"]] != "1" and date[post["date_unixtime"]][-1] != "G":
+            date[post["date_unixtime"]] = f"{date[post['date_unixtime']]}, MG"
 
         # if not in MediaGroup
-        if temp[post["date_unixtime"]] == "1":
+        if date[post["date_unixtime"]] == "1":
             if post_type == "photo":
                 path = post["photo"]
                 try:
-                    caption = post["text"][0]
-                    await bot.send_photo(channel_id, FSInputFile(path), caption=caption)
-                    del temp[post["date_unixtime"]]
+                    if isinstance(post["text"], list):
+                        caption = post["text"][0]
+                    else:
+                        caption = post["text"]
+                    try:
+                        await bot.send_photo(channel_id, FSInputFile(path), caption=caption)
+                    except:
+                        logging.warning("PHOTO NOT SEND")
+                    del date[post["date_unixtime"]]
                     os.remove(path)
-                    time.sleep(5)
+                    time.sleep(600)
                 except:
-                    await bot.send_photo(channel_id, FSInputFile(path))
-                    del temp[post["date_unixtime"]]
+                    try:
+                        await bot.send_photo(channel_id, FSInputFile(path))
+                    except:
+                        logging.warning("PHOTO NOT SEND")
+                    del date[post["date_unixtime"]]
                     os.remove(path)
-                    time.sleep(5)
+                    time.sleep(600)
             elif post_type == "video":
                 path = post["file"]
                 try:
-                    caption = post["text"][0]
-                    await bot.send_video(channel_id, FSInputFile(path), caption=caption, width=post["width"],
+                    if isinstance(post["text"], list):
+                        caption = post["text"][0]
+                    else:
+                        caption = post["text"]
+                    try:
+                        await bot.send_video(channel_id, FSInputFile(path), caption=caption, width=post["width"],
                                          height=post["height"], thumbnail=FSInputFile(post["thumbnail"]))
-                    del temp[post["date_unixtime"]]
+                    except:
+                        logging.warning("VIDEO NOT SEND")
+                    del date[post["date_unixtime"]]
                     os.remove(post["thumbnail"])
                     os.remove(path)
-                    time.sleep(5)
+                    time.sleep(600)
                 except:
-                    await bot.send_video(channel_id, FSInputFile(path), width=post["width"], height=post["height"],
+                    try:
+                        await bot.send_video(channel_id, FSInputFile(path), width=post["width"], height=post["height"],
                                          thumbnail=FSInputFile(post["thumbnail"]))
-                    del temp[post["date_unixtime"]]
+                    except:
+                        logging.warning("VIDEO NOT SEND")
+                    del date[post["date_unixtime"]]
                     os.remove(post["thumbnail"])
                     os.remove(path)
-                    time.sleep(5)
+                    time.sleep(600)
             elif post_type == "text":
                 text = post["text"][0]
-                await bot.send_message(channel_id, text)
-                del temp[post["date_unixtime"]]
+                try:
+                    await bot.send_message(channel_id, text)
+                except:
+                    logging.warning("TEXT NOT SEND")
+                del date[post["date_unixtime"]]
+                time.sleep(600)
         # if in MediaGroup
         else:
-            quantity = int(re.sub('\D', '', temp[post["date_unixtime"]]))
+            quantity = int(re.sub('\D', '', date[post["date_unixtime"]]))
 
             if a == 0:
                 try:
@@ -119,7 +168,10 @@ async def send_message():
             if post_type == "photo":
                 path = post["photo"]
                 try:
-                    caption = post["text"][0]
+                    if isinstance(post["text"], list):
+                        caption = post["text"][0]
+                    else:
+                        caption = post["text"]
                     mg.add(type="photo", media=FSInputFile(path), width=post["width"], height=post["height"],
                            caption=caption)
                 except:
@@ -135,16 +187,16 @@ async def send_message():
                            thumbnail=FSInputFile(post["thumbnail"]))
 
             quantity -= 1
-            temp[post["date_unixtime"]] = f"{quantity}, MG"
+            date[post["date_unixtime"]] = f"{quantity}, MG"
 
             if quantity == 0:
-                print(mg)
-                print("\n--------------\n")
-                print(mg.build())
-                await bot.send_media_group(channel_id, mg.build())
-                del temp[post["date_unixtime"]]
+                try:
+                    await bot.send_media_group(channel_id, mg.build())
+                except:
+                    logging.warning("MediaGroup NOT SEND")
+                del date[post["date_unixtime"]]
                 a = 0
-                time.sleep(5)
+                time.sleep(600)
 
 
 async def main():
