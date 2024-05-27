@@ -1,8 +1,9 @@
-from main import dp, db, send_message
-from config import wl
+from main import dp, db, send_message, bot
+from config import wl, ADMIN_ID
 from keyboards import admin_panel
 from aiogram.filters import Command
 from aiogram import types, F
+from commands import set_commands
 
 
 from states import UserState
@@ -11,15 +12,17 @@ from aiogram.fsm.context import FSMContext
 
 @dp.message(Command('ap'))
 async def settings_newsletter(msg: types.Message):
-    if msg.from_user.id == 498975827:
+    if msg.from_user.id in ADMIN_ID:
+        await set_commands(bot)
+
         delete = await db.get_delete()
+        launch = await db.get_launched()
 
         if delete[0] == 1:
             admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🟢"
         else:
             admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🔴"
 
-        launch = await db.get_launched()
         if launch[0] == 1:
             admin_panel.inline_keyboard[3][0].text = "Закончить рассылку"
         else:
@@ -30,8 +33,9 @@ async def settings_newsletter(msg: types.Message):
 # Сбросить данные
 @dp.callback_query(F.data.startswith('restart'))
 async def restart(call: types.CallbackQuery):
-    if call.from_user.id == 498975827:
+    if call.from_user.id in ADMIN_ID:
         launch = await db.get_launched()
+
         if launch[0] == 1:
             await call.answer(text="Сброс невозможен, так как включена рассылка!")
         else:
@@ -43,12 +47,11 @@ async def restart(call: types.CallbackQuery):
             await call.answer("Данные сброшены!")
 
 
-
 # Начать рассылку
 @dp.callback_query(F.data.startswith('start'))
 async def start(call: types.CallbackQuery):
     launched = await db.get_launched()
-    if call.from_user.id == 498975827 and launched[0] == 0:
+    if call.from_user.id in ADMIN_ID and launched[0] == 0:
         delete = await db.get_delete()
         if delete[0] == 0:
             admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🔴"

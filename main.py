@@ -14,10 +14,11 @@ import logging
 import json
 import re
 import os
+import random
 
 # project files
 from db import Database
-from config import wl
+from config import wl, ADMIN_ID
 
 logging.basicConfig(level=logging.INFO)
 
@@ -87,18 +88,21 @@ async def send_message():
     # Если время 00, то бот уходит на перерыв на 9 часов
     d = pytz.timezone('Europe/Moscow').localize(datetime.datetime.now()).strftime('%H:%M')
     if d == time[0]:
-        await bot.send_message(498975827, "Бот спит", disable_notification=True)
+        for i in ADMIN_ID:
+            await bot.send_message(i, "Бот спит", disable_notification=True)
         await db.set_launched(0)
         await asyncio.sleep(32400)
 
     if delete[0] == 1:
-        await bot.send_message(498975827, f"Рассылка запущена!\nВсего постов: <b>{len(date)}</b> шт.\nПериод рассылки: <b>{period[0]}</b> сек. ({round(int(period[0])/60, 1)} мин.)\nУдаление медиа: <b>включено</b>\nБот уходит спать в: <b>{time[0]}</b>")
+        for i in ADMIN_ID:
+            await bot.send_message(i, f"Рассылка запущена!\nВсего постов: <b>{len(date)}</b> шт.\nПериод рассылки: <b>{period[0]}</b> сек. ({round(int(period[0])/60, 1)} мин.)\nУдаление медиа: <b>включено</b>\nБот уходит спать в: <b>{time[0]}</b>")
     else:
-        await bot.send_message(498975827,
+        for i in ADMIN_ID:
+            await bot.send_message(i,
                                f"Рассылка запущена!\nВсего постов: <b>{len(date)}</b> шт.\nПериод рассылки: <b>{period[0]}</b> сек. ({round(int(period[0])/60, 1)} мин.)\nУдаление медиа: <b>отключено</b>\nБот уходит спать в: <b>{time[0]}</b>")
 
-    # # Shuffle
-    # random.shuffle(posts_clear["messages"])
+    # Shuffle
+    random.shuffle(posts_clear["messages"])
 
     # Send message
     for post in posts_clear["messages"]:
@@ -107,32 +111,38 @@ async def send_message():
         if stop[0] == 1:
             break
         else:
-            break_flag = False
             # GET PERIOD
             try:
                 period = await db.get_period()
             except:
-                await bot.send_message(498975827, "🟡 [WARNING] Не получилось получить данные периода рассылки")
+                for i in ADMIN_ID:
+                    await bot.send_message(i, "🟡 [WARNING] Не получилось получить данные периода рассылки")
                 logging.warning("Не получилось получить данные периода рассылки")
                 period = 600
 
             # Если время 00, то бот уходит на перерыв на 9 часов
             if d == time[0]:
                 await bot.send_photo(channel_id, FSInputFile("media/photo.jpg"), caption="Слатких снов <3")
-                await bot.send_message(498975827, "🔵 [INFO] Я ушел спать! Буду через 9 часов", disable_notification=True)
+                for i in ADMIN_ID:
+                    await bot.send_message(i, "🔵 [INFO] Я ушел спать! Буду через 9 часов", disable_notification=True)
                 await asyncio.sleep(32400)
 
             # Уведомления о количестве оставшихся постов
             if len(date) == 50:
-                await bot.send_message(498975827, "🔵 [INFO] Осталось 50 постов")
+                for i in ADMIN_ID:
+                    await bot.send_message(i, "🔵 [INFO] Осталось 50 постов")
             elif len(date) == 40:
-                await bot.send_message(498975827, "🔵 [INFO] Осталось 40 постов")
+                for i in ADMIN_ID:
+                    await bot.send_message(i, "🔵 [INFO] Осталось 40 постов")
             elif len(date) == 30:
-                await bot.send_message(498975827, "🔵 [INFO] Осталось 30 постов")
+                for i in ADMIN_ID:
+                    await bot.send_message(i, "🔵 [INFO] Осталось 30 постов")
             elif len(date) == 20:
-                await bot.send_message(498975827, "🔵 [INFO] Осталось 20 постов")
+                for i in ADMIN_ID:
+                    await bot.send_message(i, "🔵 [INFO] Осталось 20 постов")
             elif len(date) == 10:
-                await bot.send_message(498975827, "🔵 [INFO] Осталось 10 постов")
+                for i in ADMIN_ID:
+                    await bot.send_message(i, "🔵 [INFO] Осталось 10 постов")
 
             # Message type
             if "photo" in post:
@@ -162,7 +172,8 @@ async def send_message():
                             await bot.send_photo(channel_id, FSInputFile(path), caption=caption)
                         except FileNotFoundError as e:
                             logging.warning(f"PHOTO NOT FOUND\n\n{e}")
-                            await bot.send_message(498975827, f"🟡 [WARNING] Фото не отправлено\nID: {post['id']}")
+                            for i in ADMIN_ID:
+                                await bot.send_message(i, f"🟡 [WARNING] Фото не отправлено\nID: {post['id']}")
                         try:
                             del date[post["date_unixtime"]]
 
@@ -170,7 +181,8 @@ async def send_message():
                                 os.remove(path)
                         except FileNotFoundError as e:
                             logging.warning(f"PHOTO NOT FOUND\n\n{e}")
-                            await bot.send_message(498975827, f"🟡 [WARNING] Фото не отправлено\nID: {post['id']}")
+                            for i in ADMIN_ID:
+                                await bot.send_message(i, f"🟡 [WARNING] Фото не отправлено\nID: {post['id']}")
                         await asyncio.sleep(period[0])
 
                     except:
@@ -178,14 +190,16 @@ async def send_message():
                             await bot.send_photo(channel_id, FSInputFile(path))
                         except FileNotFoundError as e:
                             logging.warning(f"PHOTO NOT FOUND\n\n{e}")
-                            await bot.send_message(498975827, f"🟡 [WARNING] Фото не отправлено\nID: {post['id']}")
+                            for i in ADMIN_ID:
+                                await bot.send_message(i, f"🟡 [WARNING] Фото не отправлено\nID: {post['id']}")
                         try:
                             del date[post["date_unixtime"]]
                             if delete[0] == 1:
                                 os.remove(path)
                         except FileNotFoundError as e:
                             logging.warning(f"PHOTO NOT FOUND\n\n{e}")
-                            await bot.send_message(498975827, f"🟡 [WARNING] Видео не отправлено\nID: {post['id']}\n\n{e}")
+                            for i in ADMIN_ID:
+                                await bot.send_message(i, f"🟡 [WARNING] Видео не отправлено\nID: {post['id']}\n\n{e}")
                         await asyncio.sleep(period[0])
 
                 elif post_type == "video":
@@ -200,7 +214,8 @@ async def send_message():
                                                  height=post["height"], thumbnail=FSInputFile(post["thumbnail"]))
                         except FileNotFoundError as e:
                             logging.warning(f"VIDEO NOT FOUND\n\n{e}")
-                            await bot.send_message(498975827, f"🟡 [WARNING] Видео не отправлено\nID: {post['id']}\n\n{e}")
+                            for i in ADMIN_ID:
+                                await bot.send_message(i, f"🟡 [WARNING] Видео не отправлено\nID: {post['id']}\n\n{e}")
                         try:
                             del date[post["date_unixtime"]]
                             if delete[0] == 1:
@@ -208,7 +223,8 @@ async def send_message():
                                 os.remove(path)
                         except FileNotFoundError as e:
                             logging.warning(f"VIDEO NOT FOUND\n\n{e}")
-                            await bot.send_message(498975827, f"🟡 [WARNING] Видео не отправлено\nID: {post['id']}\n\n{e}")
+                            for i in ADMIN_ID:
+                                await bot.send_message(i, f"🟡 [WARNING] Видео не отправлено\nID: {post['id']}\n\n{e}")
                         await asyncio.sleep(period[0])
 
                     except:
@@ -217,7 +233,8 @@ async def send_message():
                                                  thumbnail=FSInputFile(post["thumbnail"]))
                         except FileNotFoundError as e:
                             logging.warning(f"VIDEO NOT FOUND\n\n{e}")
-                            await bot.send_message(498975827, f"🟡 [WARNING] Видео не отправлено\nID: {post['id']}\n\n{e}")
+                            for i in ADMIN_ID:
+                                await bot.send_message(i, f"🟡 [WARNING] Видео не отправлено\nID: {post['id']}\n\n{e}")
                         try:
                             del date[post["date_unixtime"]]
                             if delete[0] == 1:
@@ -225,7 +242,8 @@ async def send_message():
                                 os.remove(path)
                         except FileNotFoundError as e:
                             logging.warning(f"VIDEO NOT FOUND\n\n{e}")
-                            await bot.send_message(498975827, e)
+                            for i in ADMIN_ID:
+                                await bot.send_message(i, e)
                         await asyncio.sleep(period[0])
 
                 elif post_type == "text":
@@ -234,7 +252,8 @@ async def send_message():
                         await bot.send_message(channel_id, text)
                     except:
                         logging.warning("TEXT NOT SEND")
-                        await bot.send_message(498975827, f"🟡 [WARNING] Текст не отправлен\nID: {post['id']}")
+                        for i in ADMIN_ID:
+                            await bot.send_message(i, f"🟡 [WARNING] Текст не отправлен\nID: {post['id']}")
                     del date[post["date_unixtime"]]
                     await asyncio.sleep(period[0])
 
@@ -279,14 +298,16 @@ async def send_message():
                         await bot.send_media_group(channel_id, mg.build())
                     except:
                         logging.warning("MediaGroup NOT SEND")
-                        await bot.send_message(498975827, f"🟡 [WARNING] Медиа группа не отправлена\nID: {post['id']}")
+                        for i in ADMIN_ID:
+                            await bot.send_message(i, f"🟡 [WARNING] Медиа группа не отправлена\nID: {post['id']}")
                     del date[post["date_unixtime"]]
                     a = 0
                     await asyncio.sleep(period[0])
 
     stop = await db.get_stop()
     if stop[0] == 0:
-        await bot.send_message(498975827, "🔴[INFO] ПОСТЫ ЗАКОНЧИЛИСЬ ❗️")
+        for i in ADMIN_ID:
+            await bot.send_message(i, "🔴[INFO] ПОСТЫ ЗАКОНЧИЛИСЬ ❗️")
     await db.set_launched(0)
     await db.set_stop(0)
 
