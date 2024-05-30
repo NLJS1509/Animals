@@ -5,12 +5,10 @@ from aiogram.filters import Command
 from aiogram import types, F
 from commands import set_commands
 
-
 from states import UserState
 from aiogram.fsm.context import FSMContext
 from datetime import datetime, time, timedelta
 import pytz
-import asyncio
 
 
 async def is_work_time(start_time: str, end_time: str):
@@ -18,14 +16,6 @@ async def is_work_time(start_time: str, end_time: str):
     start = time.fromisoformat(start_time)
     end = time.fromisoformat(end_time)
     return any([now <= end, now >= start]) if not start < end else (start <= now <= end)
-
-async def wating_to_wake_up(start_time, end_time):
-    start = datetime.strptime(start_time, '%H:%M')
-    end = datetime.strptime(end_time, '%H:%M')
-    hours = datetime.strptime("00:00", "%H:%M")
-    result = datetime.strftime(hours - (end - start), '%H:%M')
-    asd = timedelta(hours=int(result[0] + result[1]), minutes=int(result[3] + result[4]))
-    return round(asd.total_seconds())
 
 
 @dp.message(Command('ap'))
@@ -49,20 +39,10 @@ async def settings_newsletter(msg: types.Message):
 
 
 # Сбросить данные
-@dp.callback_query(F.data.startswith('restart'))
+@dp.callback_query(F.data.startswith('add_posts'))
 async def restart(call: types.CallbackQuery):
     if call.from_user.id in ADMIN_ID:
-        launch = await db.get_launched()
-
-        if launch[0] == 1:
-            await call.answer(text="Сброс невозможен, так как включена рассылка!")
-        else:
-            await db.set_stop(0)
-            await db.set_delete(0)
-            if admin_panel.inline_keyboard[2][0].text != "Удаление постов 🔴":
-                admin_panel.inline_keyboard[2][0].text = "Удаление постов 🔴"
-                await call.message.edit_reply_markup(reply_markup=admin_panel)
-            await call.answer("Данные сброшены!")
+        await call.answer("В разработке")
 
 
 # Начать рассылку
@@ -87,7 +67,7 @@ async def start(call: types.CallbackQuery):
             admin_panel.inline_keyboard[2][0].text = "Удаление постов 🟢"
         admin_panel.inline_keyboard[4][0].text = "Начать рассылку"
         await call.message.edit_reply_markup(reply_markup=admin_panel)
-        await call.message.answer("Рассылка завершена!")
+        await call.message.answer("Рассылка выключена!")
         await db.set_launched(0)
 
 
@@ -95,7 +75,8 @@ async def start(call: types.CallbackQuery):
 @dp.callback_query(F.data.startswith('mailing_period'))
 async def mailing_period(call: types.CallbackQuery, state: FSMContext):
     period = await db.get_period()
-    await call.message.answer(f"В данный момент установлен период: <b>{period[0]}</b> сек. ({round(int(period[0])/60, 1)} мин.)\nОтправь новый период рассылки в <b>СЕКУНДАХ</b>", )
+    await call.message.answer(
+        f"В данный момент установлен период: <b>{period[0]}</b> сек. ({round(int(period[0]) / 60, 1)} мин.)\nОтправь новый период рассылки в <b>СЕКУНДАХ</b>", )
     await state.set_state(UserState.wait_send_seconds)
 
 
@@ -149,7 +130,8 @@ async def add_wl2(msg: types.Message, state: FSMContext):
         white_list = await db.get_wl()
         for lists in white_list:
             wl.append(lists[0])
-        await msg.answer(f"Ссылка '<b>{msg.text}</b>' успешно добавлена!!!\nТеперь список выглядит так:\n{wl}", disable_web_page_preview=True)
+        await msg.answer(f"Ссылка '<b>{msg.text}</b>' успешно добавлена!!!\nТеперь список выглядит так:\n{wl}",
+                         disable_web_page_preview=True)
     except:
         await msg.answer("Произошла ошибка =(")
     await state.clear()
@@ -163,7 +145,8 @@ async def del_wl(call: types.CallbackQuery, state: FSMContext):
     for lists in white_list:
         wl.append(lists[0])
     await call.message.answer(
-        f"В данный момент в списке ссылки:\n{wl}\nОтправь <b>ссылку</b>, которую нужно удалить", disable_web_page_preview=True)
+        f"В данный момент в списке ссылки:\n{wl}\nОтправь <b>ссылку</b>, которую нужно удалить",
+        disable_web_page_preview=True)
     await state.set_state(UserState.wait_index)
 
 
@@ -175,7 +158,8 @@ async def del_wl2(msg: types.Message, state: FSMContext):
         white_list = await db.get_wl()
         for lists in white_list:
             wl.append(lists[0])
-        await msg.answer(f"Ссылка '<b>{msg.text}</b>' успешно удалена!!!\n\nТеперь список выглядит так:\n{wl}", disable_web_page_preview=True)
+        await msg.answer(f"Ссылка '<b>{msg.text}</b>' успешно удалена!!!\n\nТеперь список выглядит так:\n{wl}",
+                         disable_web_page_preview=True)
     except:
         await msg.answer("Произошла ошибка =(")
     await state.clear()
@@ -211,5 +195,3 @@ async def up2(msg: types.Message, state: FSMContext):
     await db.set_up(msg.text)
     await msg.answer(f"Отлично!\nТеперь бот просыпается в <b>{msg.text}</b>")
     await state.clear()
-
-

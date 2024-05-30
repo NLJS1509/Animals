@@ -35,7 +35,7 @@ async def is_work_time(start_time: str, end_time: str):
     return any([now <= end, now >= start]) if not start < end else (start <= now <= end)
 
 
-def wating_to_wake_up(start_time, end_time):
+async def waiting_to_wake_up(start_time, end_time):
     start = datetime.strptime(start_time, '%H:%M')
     end = datetime.strptime(end_time, '%H:%M')
     hours = datetime.strptime("00:00", "%H:%M")
@@ -55,8 +55,6 @@ async def send_message():
     posts_clear = {"messages": []}
     delete = await db.get_delete()
     period = await db.get_period()
-    time_to_sleep = await db.get_sleep()
-    time_to_up = await db.get_up()
 
     wl = []
     white_list = await db.get_wl()
@@ -112,10 +110,10 @@ async def send_message():
         for i in ADMIN_ID:
             await bot.send_message(i, f"Бот спит 😴\nПроснется в {time_to_up[0]} и начнет рассылку",
                                    disable_notification=True)
-        await asyncio.sleep(wating_to_wake_up(time_to_up[0], time_to_sleep[0]))
+        await asyncio.sleep(await waiting_to_wake_up(time_to_up[0], time_to_sleep[0]))
 
     launch = await db.get_launched()
-    if launch == 1:
+    if launch[0] == 1:
         # mailing launch message
         if delete[0] == 1:
             for i in ADMIN_ID:
@@ -152,7 +150,7 @@ async def send_message():
             if not await is_work_time(time_to_up[0], time_to_sleep[0]):
                 for i in ADMIN_ID:
                     await bot.send_message(i, f"🔵 [INFO] Я ушел спать😴\nБуду в {time_to_up[0]}", disable_notification=True)
-                    await asyncio.sleep(wating_to_wake_up(time_to_up[0], time_to_sleep[0]))
+                    await asyncio.sleep(await waiting_to_wake_up(time_to_up[0], time_to_sleep[0]))
 
             else:
                 # Notifications about the number of remaining posts
