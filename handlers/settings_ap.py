@@ -8,6 +8,24 @@ from commands import set_commands
 
 from states import UserState
 from aiogram.fsm.context import FSMContext
+from datetime import datetime, time, timedelta
+import pytz
+import asyncio
+
+
+async def is_work_time(start_time: str, end_time: str):
+    now = pytz.timezone('Europe/Moscow').localize(datetime.now()).time()
+    start = time.fromisoformat(start_time)
+    end = time.fromisoformat(end_time)
+    return any([now <= end, now >= start]) if not start < end else (start <= now <= end)
+
+async def wating_to_wake_up(start_time, end_time):
+    start = datetime.strptime(start_time, '%H:%M')
+    end = datetime.strptime(end_time, '%H:%M')
+    hours = datetime.strptime("00:00", "%H:%M")
+    result = datetime.strftime(hours - (end - start), '%H:%M')
+    asd = timedelta(hours=int(result[0] + result[1]), minutes=int(result[3] + result[4]))
+    return round(asd.total_seconds())
 
 
 @dp.message(Command('ap'))
@@ -19,14 +37,14 @@ async def settings_newsletter(msg: types.Message):
         launch = await db.get_launched()
 
         if delete[0] == 1:
-            admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🟢"
+            admin_panel.inline_keyboard[2][0].text = "Удаление постов 🟢"
         else:
-            admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🔴"
+            admin_panel.inline_keyboard[2][0].text = "Удаление постов 🔴"
 
         if launch[0] == 1:
-            admin_panel.inline_keyboard[3][0].text = "Закончить рассылку"
+            admin_panel.inline_keyboard[4][0].text = "Закончить рассылку"
         else:
-            admin_panel.inline_keyboard[3][0].text = "Начать рассылку"
+            admin_panel.inline_keyboard[4][0].text = "Начать рассылку"
         await msg.answer("йоу", reply_markup=admin_panel)
 
 
@@ -41,8 +59,8 @@ async def restart(call: types.CallbackQuery):
         else:
             await db.set_stop(0)
             await db.set_delete(0)
-            if admin_panel.inline_keyboard[2][0].text != "Удаление медиа 🔴":
-                admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🔴"
+            if admin_panel.inline_keyboard[2][0].text != "Удаление постов 🔴":
+                admin_panel.inline_keyboard[2][0].text = "Удаление постов 🔴"
                 await call.message.edit_reply_markup(reply_markup=admin_panel)
             await call.answer("Данные сброшены!")
 
@@ -54,20 +72,23 @@ async def start(call: types.CallbackQuery):
     if call.from_user.id in ADMIN_ID and launched[0] == 0:
         delete = await db.get_delete()
         if delete[0] == 0:
-            admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🔴"
+            admin_panel.inline_keyboard[2][0].text = "Удаление постов 🔴"
         else:
-            admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🟢"
-        admin_panel.inline_keyboard[3][0].text = "Закончить рассылку"
+            admin_panel.inline_keyboard[2][0].text = "Удаление постов 🟢"
+        admin_panel.inline_keyboard[4][0].text = "Закончить рассылку"
         await call.message.edit_reply_markup(reply_markup=admin_panel)
         await db.set_launched(1)
-        await db.set_stop(0)
         await send_message()
     else:
-        await db.set_launched(0)
-        admin_panel.inline_keyboard[3][0].text = "Начать рассылку"
+        delete = await db.get_delete()
+        if delete[0] == 0:
+            admin_panel.inline_keyboard[2][0].text = "Удаление постов 🔴"
+        else:
+            admin_panel.inline_keyboard[2][0].text = "Удаление постов 🟢"
+        admin_panel.inline_keyboard[4][0].text = "Начать рассылку"
         await call.message.edit_reply_markup(reply_markup=admin_panel)
         await call.message.answer("Рассылка завершена!")
-        await db.set_stop(1)
+        await db.set_launched(0)
 
 
 # Установить период рассылки
@@ -98,12 +119,12 @@ async def stop_func(call: types.CallbackQuery):
     else:
         if delete[0] == 0:
             await db.set_delete(1)
-            admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🟢"
+            admin_panel.inline_keyboard[2][0].text = "Удаление постов 🟢"
             await call.message.edit_reply_markup(reply_markup=admin_panel)
             await call.answer("Удаление медиа включено!")
         else:
             await db.set_delete(0)
-            admin_panel.inline_keyboard[2][0].text = "Удаление медиа 🔴"
+            admin_panel.inline_keyboard[2][0].text = "Удаление постов 🔴"
             await call.message.edit_reply_markup(reply_markup=admin_panel)
             await call.answer("Удаление медиа отключено!")
 
@@ -111,16 +132,24 @@ async def stop_func(call: types.CallbackQuery):
 # Добавить в WL
 @dp.callback_query(F.data.startswith('add_wl'))
 async def add_wl(call: types.CallbackQuery, state: FSMContext):
+    wl = []
+    white_list = await db.get_wl()
+    for lists in white_list:
+        wl.append(lists[0])
     await call.message.answer(
-        f"В данный момент в списке ссылки:\n{wl}\nОтправь ссылку, чтобы ее добавить")
+        f"В данный момент в списке ссылки:\n{wl}\nОтправь ссылку, чтобы ее добавить", disable_web_page_preview=True)
     await state.set_state(UserState.wait_link)
 
 
 @dp.message(UserState.wait_link)
 async def add_wl2(msg: types.Message, state: FSMContext):
     try:
-        wl.append(msg.text)
-        await msg.answer(f"Ссылка '<b>{msg.text}</b>' успешно добавлена!!!\nТеперь список выглядит так:\n{wl}")
+        await db.set_wl(msg.text)
+        wl = []
+        white_list = await db.get_wl()
+        for lists in white_list:
+            wl.append(lists[0])
+        await msg.answer(f"Ссылка '<b>{msg.text}</b>' успешно добавлена!!!\nТеперь список выглядит так:\n{wl}", disable_web_page_preview=True)
     except:
         await msg.answer("Произошла ошибка =(")
     await state.clear()
@@ -129,16 +158,24 @@ async def add_wl2(msg: types.Message, state: FSMContext):
 # Удалить из WL
 @dp.callback_query(F.data.startswith('del_wl'))
 async def del_wl(call: types.CallbackQuery, state: FSMContext):
+    wl = []
+    white_list = await db.get_wl()
+    for lists in white_list:
+        wl.append(lists[0])
     await call.message.answer(
-        f"В данный момент в списке ссылки:\n{wl}\nОтправь <b>индекс</b> элемента, который нужно удалить")
+        f"В данный момент в списке ссылки:\n{wl}\nОтправь <b>ссылку</b>, которую нужно удалить", disable_web_page_preview=True)
     await state.set_state(UserState.wait_index)
 
 
 @dp.message(UserState.wait_index)
 async def del_wl2(msg: types.Message, state: FSMContext):
     try:
-        del wl[int(msg.text)]
-        await msg.answer(f"Элемент '<b>{msg.text}</b>' успешно удален!!!\n\nТеперь список выглядит так:\n{wl}")
+        await db.del_wl(msg.text)
+        wl = []
+        white_list = await db.get_wl()
+        for lists in white_list:
+            wl.append(lists[0])
+        await msg.answer(f"Ссылка '<b>{msg.text}</b>' успешно удалена!!!\n\nТеперь список выглядит так:\n{wl}", disable_web_page_preview=True)
     except:
         await msg.answer("Произошла ошибка =(")
     await state.clear()
@@ -147,14 +184,32 @@ async def del_wl2(msg: types.Message, state: FSMContext):
 # Во сколько спать?
 @dp.callback_query(F.data.startswith('time_to_sleep'))
 async def sleep(call: types.CallbackQuery, state: FSMContext):
-    time = await db.get_time()
+    time_to_sleep = await db.get_sleep()
     await call.message.answer(
-        f"В данный момент бот уходит спать в <b>{time[0]}</b>\nОтправь время, в которое бот должен уйти спать\n(23:15, 21:05, 00:45 ...")
-    await state.set_state(UserState.wait_time)
+        f"В данный момент бот уходит спать в <b>{time_to_sleep[0]}</b>\nОтправь время, в которое бот должен уйти спать\n(23:10, 21:45, 00:15, ...)")
+    await state.set_state(UserState.wait_sleep)
 
 
-@dp.message(UserState.wait_time)
+@dp.message(UserState.wait_sleep)
 async def sleep2(msg: types.Message, state: FSMContext):
-    await db.set_time(msg.text)
+    await db.set_sleep(msg.text)
     await msg.answer(f"Отлично!\nТеперь бот уходит спать в <b>{msg.text}</b>")
     await state.clear()
+
+
+# Во сколько вставать?
+@dp.callback_query(F.data.startswith('time_to_up'))
+async def up(call: types.CallbackQuery, state: FSMContext):
+    time_to_up = await db.get_up()
+    await call.message.answer(
+        f"В данный момент бот просыпается в <b>{time_to_up[0]}</b>\nОтправь время, в которое бот должен просыпаться\n(08:00, 08:30, 09:15, ...)")
+    await state.set_state(UserState.wait_up)
+
+
+@dp.message(UserState.wait_up)
+async def up2(msg: types.Message, state: FSMContext):
+    await db.set_up(msg.text)
+    await msg.answer(f"Отлично!\nТеперь бот просыпается в <b>{msg.text}</b>")
+    await state.clear()
+
+

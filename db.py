@@ -15,13 +15,6 @@ class Database:
         with self.connection:
             self.cursor.execute("UPDATE data SET period = ?", (period,))
 
-    async def get_stop(self):
-        with self.connection:
-            return self.cursor.execute("SELECT stop FROM data", ).fetchall()[0]
-
-    async def set_stop(self, pause):
-        with self.connection:
-            self.cursor.execute("UPDATE data SET stop = ?", (pause,))
 
     async def get_launched(self):
         with self.connection:
@@ -39,10 +32,30 @@ class Database:
         with self.connection:
             self.cursor.execute("UPDATE data SET del = ?", (delete,))
 
-    async def get_time(self):
+    async def get_sleep(self):
         with self.connection:
-            return self.cursor.execute("SELECT time FROM data", ).fetchall()[0]
+            return self.cursor.execute("SELECT time_to_sleep FROM data", ).fetchall()[0]
 
-    async def set_time(self, time):
+    async def set_sleep(self, time):
         with self.connection:
-            self.cursor.execute("UPDATE data SET time = ?", (time,))
+            self.cursor.execute("UPDATE data SET time_to_sleep = ?", (time,))
+
+    async def get_up(self):
+        with self.connection:
+            return self.cursor.execute("SELECT time_to_up FROM data", ).fetchall()[0]
+
+    async def set_up(self, time):
+        with self.connection:
+            self.cursor.execute("UPDATE data SET time_to_up = ?", (time,))
+
+    async def get_wl(self):
+        with self.connection:
+            return self.cursor.execute("SELECT white_list FROM data", ).fetchall()
+
+    async def set_wl(self, wl):
+        with self.connection:
+            self.cursor.execute("INSERT INTO 'data' ('white_list') VALUES (?)", (wl,))
+
+    async def del_wl(self, wl):
+        with self.connection:
+            self.cursor.execute(f"DELETE FROM data WHERE white_list LIKE '%{wl}%'")
