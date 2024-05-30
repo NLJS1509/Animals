@@ -331,9 +331,11 @@ async def send_message():
                         await asyncio.sleep(period[0])
 
         # newsletter that posts are over
-        for i in ADMIN_ID:
-            await bot.send_message(i, "🔴[INFO] ПОСТЫ ЗАКОНЧИЛИСЬ ❗️")
-        await db.set_launched(0)
+        launch = await db.get_launched()
+        if launch[0] == 1:
+            for i in ADMIN_ID:
+                await bot.send_message(i, "🔴[INFO] ПОСТЫ ЗАКОНЧИЛИСЬ ❗️")
+            await db.set_launched(0)
 
 
 async def main():
