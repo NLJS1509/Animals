@@ -108,7 +108,7 @@ async def send_message():
     time_to_up = await db.get_up()
     if not await is_work_time(time_to_up[0], time_to_sleep[0]):
         for i in ADMIN_ID:
-            await bot.send_message(i, f"Бот спит 😴\nПроснется в {time_to_up[0]} и начнет рассылку",
+            await bot.send_message(i, f"Бот спит 😴\nОн проснется в {time_to_up[0]} и начнет рассылку",
                                    disable_notification=True)
         await asyncio.sleep(await waiting_to_wake_up(time_to_up[0], time_to_sleep[0]))
 
@@ -334,7 +334,7 @@ async def send_message():
         launch = await db.get_launched()
         if launch[0] == 1:
             for i in ADMIN_ID:
-                await bot.send_message(i, "🔴[INFO] ПОСТЫ ЗАКОНЧИЛИСЬ ❗️")
+                await bot.send_message(i, "🔴 [INFO] ПОСТЫ ЗАКОНЧИЛИСЬ ❗️")
             await db.set_launched(0)
 
 
