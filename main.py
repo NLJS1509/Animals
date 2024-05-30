@@ -150,7 +150,7 @@ async def send_message():
             if not await is_work_time(time_to_up[0], time_to_sleep[0]):
                 for i in ADMIN_ID:
                     await bot.send_message(i, f"🔵 [INFO] Я ушел спать😴\nБуду в {time_to_up[0]}", disable_notification=True)
-                    await asyncio.sleep(await waiting_to_wake_up(time_to_up[0], time_to_sleep[0]))
+                await asyncio.sleep(await waiting_to_wake_up(time_to_up[0], time_to_sleep[0]))
 
             else:
                 # Notifications about the number of remaining posts
