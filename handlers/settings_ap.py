@@ -7,8 +7,9 @@ from commands import set_commands
 
 from states import UserState
 from aiogram.fsm.context import FSMContext
-from datetime import datetime, time, timedelta
+from datetime import datetime, time
 import pytz
+import zipfile
 
 
 async def is_work_time(start_time: str, end_time: str):
@@ -38,14 +39,30 @@ async def settings_newsletter(msg: types.Message):
         await msg.answer("йоу", reply_markup=admin_panel)
 
 
-# Сбросить данные
-@dp.callback_query(F.data.startswith('add_posts'))
-async def restart(call: types.CallbackQuery):
+# time to start
+@dp.callback_query(F.data.startswith('time_to_start'))
+async def set_start(call: types.CallbackQuery, state: FSMContext):
     if call.from_user.id in ADMIN_ID:
         await call.answer("В разработке")
+#         start = await db.get_start()
+#         if start[0] != '0':
+#             await call.message.answer(
+#                 f"В данный момент время старта: <b>{start}<b>\nОтправь новое время начала рассылки ниже\n<i>(23:10, 21:45, 00:15, ...)</i>", )
+#         else:
+#             await call.message.answer(
+#                 f"В данный момент время старта рассылки не установлено.\nОтправь время начала рассылки ниже\n<i>(23:10, 21:45, 00:15, ...)</i>", )
+#         await state.set_state(UserState.wait_start)
+#
+#
+# @dp.message(UserState.wait_start)
+# async def set_start2(msg: types.Message, state: FSMContext):
+#     await db.set_start(msg.text)
+#     start = await db.get_start()
+#     await msg.answer(f"Отлично!\nРассылка будет запущена в {start}")
+#     await state.clear()
 
 
-# Начать рассылку
+# Start newsletter
 @dp.callback_query(F.data.startswith('start'))
 async def start(call: types.CallbackQuery):
     launched = await db.get_launched()

@@ -7,3 +7,6 @@ class UserState(StatesGroup):
     wait_index = State()
     wait_sleep = State()
     wait_up = State()
+    wait_json = State()
+    wait_media = State()
+    wait_start = State()

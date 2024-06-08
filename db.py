@@ -59,3 +59,11 @@ class Database:
     async def del_wl(self, wl):
         with self.connection:
             self.cursor.execute(f"DELETE FROM data WHERE white_list LIKE '%{wl}%'")
+
+    async def get_start(self):
+        with self.connection:
+            return self.cursor.execute("SELECT time_to_start FROM data", ).fetchall()
+
+    async def set_start(self, start):
+        with self.connection:
+            self.cursor.execute("INSERT INTO 'data' ('time_to_start') VALUES (?)", (start,))
