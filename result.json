@@ -1,2933 +1,860 @@
 {
- "name": "Пёсельная",
- "type": "private_channel",
- "id": 1972830020,
- "messages": [
-  {
-   "id": 3056,
-   "type": "message",
-   "date": "2024-05-01T09:02:26",
-   "date_unixtime": "1714539746",
-   "edited": "2024-05-01T09:03:04",
-   "edited_unixtime": "1714539784",
-   "from": "Пёсельная",
-   "from_id": "channel1972830020",
-   "file": "video_files/IMG_8353.MP4",
-   "file_name": "IMG_8353.MP4",
-   "thumbnail": "video_files/IMG_8353.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 8,
-   "width": 352,
-   "height": 640,
-   "text": [
-    "Чеши меня полностью🤤\n\n",
+  "messages": [
     {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Чеши меня полностью🤤\n\n"
+      "id": 2891,
+      "type": "message",
+      "date": "2024-04-18T13:01:57",
+      "date_unixtime": "1713430917",
+      "edited": "2024-04-18T13:02:08",
+      "edited_unixtime": "1713430928",
+      "from": "\u0451\u0436\u0438\u043a\u0438 \ud83e\udd94",
+      "from_id": "channel1689082606",
+      "photo": "photos/photo_520@18-04-2024_13-01-57.jpg",
+      "width": 736,
+      "height": 893,
+      "text": [
+        {
+          "type": "text_link",
+          "text": "\u0451\u0436\u0438\u043a\u0438",
+          "href": "https://t.me/hedgehogiki"
+        },
+        " \ud83e\udd94"
+      ],
+      "text_entities": [
+        {
+          "type": "text_link",
+          "text": "\u0451\u0436\u0438\u043a\u0438",
+          "href": "https://t.me/hedgehogiki"
+        },
+        {
+          "type": "plain",
+          "text": " \ud83e\udd94"
+        }
+      ]
     },
     {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+      "id": 44427,
+      "type": "message",
+      "date": "2024-04-18T09:35:50",
+      "date_unixtime": "1713418550",
+      "edited": "2024-04-18T09:35:51",
+      "edited_unixtime": "1713418551",
+      "from": "\u0411\u043b\u044f\u0446\u043a\u0438\u0435 \u043a\u043e\u0442\u044b",
+      "from_id": "channel1142011374",
+      "file": "video_files/IMG_4436.MP4",
+      "file_name": "IMG_4436.MP4",
+      "thumbnail": "video_files/IMG_4436.MP4_thumb.jpg",
+      "media_type": "animation",
+      "mime_type": "video/mp4",
+      "duration_seconds": 7,
+      "width": 656,
+      "height": 846,
+      "text": "\u041f\u0440\u043e\u0441\u043d\u0443\u043b\u0438\u0441\u044c - \u043f\u043e\u0442\u044f\u043d\u0443\u043b\u0438\u0441\u044c :3",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u041f\u0440\u043e\u0441\u043d\u0443\u043b\u0438\u0441\u044c - \u043f\u043e\u0442\u044f\u043d\u0443\u043b\u0438\u0441\u044c :3"
+        }
+      ]
     },
     {
-     "type": "plain",
-     "text": ""
+      "id": 44431,
+      "type": "message",
+      "date": "2024-04-18T16:08:51",
+      "date_unixtime": "1713442131",
+      "edited": "2024-04-18T16:09:12",
+      "edited_unixtime": "1713442152",
+      "from": "\u0411\u043b\u044f\u0446\u043a\u0438\u0435 \u043a\u043e\u0442\u044b",
+      "from_id": "channel1142011374",
+      "file": "video_files/IMG_4443.MP4",
+      "file_name": "IMG_4443.MP4",
+      "thumbnail": "video_files/IMG_4443.MP4_thumb.jpg",
+      "media_type": "video_file",
+      "mime_type": "video/mp4",
+      "duration_seconds": 9,
+      "width": 640,
+      "height": 846,
+      "text": "\u041c\u043e\u044f \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u043d\u0435\u0440\u0432\u043d\u0430\u044f \u043a\u043b\u0435\u0442\u043a\u0430, \u043a\u0430\u0434\u0430 \u043c\u043d\u0435 \u0441\u043a\u0430\u0437\u0430\u043b\u0438 \u043f\u0435\u0440\u0435\u0441\u0442\u0430\u0442\u044c \u0434\u0435\u0440\u0433\u0430\u0442\u044c\u0441\u044f \u043f\u043e \u043c\u0435\u043b\u043e\u0447\u0430\u043c",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u041c\u043e\u044f \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u043d\u0435\u0440\u0432\u043d\u0430\u044f \u043a\u043b\u0435\u0442\u043a\u0430, \u043a\u0430\u0434\u0430 \u043c\u043d\u0435 \u0441\u043a\u0430\u0437\u0430\u043b\u0438 \u043f\u0435\u0440\u0435\u0441\u0442\u0430\u0442\u044c \u0434\u0435\u0440\u0433\u0430\u0442\u044c\u0441\u044f \u043f\u043e \u043c\u0435\u043b\u043e\u0447\u0430\u043c"
+        }
+      ]
+    },
+    {
+      "id": 9965,
+      "type": "message",
+      "date": "2024-04-18T20:45:36",
+      "date_unixtime": "1713458736",
+      "edited": "2024-04-18T20:45:51",
+      "edited_unixtime": "1713458751",
+      "from": "\ud83d\udc36WorldOfPets\ud83d\udc31",
+      "from_id": "channel1080141747",
+      "file": "video_files/oAFjg8ceMHoMXeyItZQixmQkMCkICexARbjQNA.mp4",
+      "file_name": "oAFjg8ceMHoMXeyItZQixmQkMCkICexARbjQNA.mp4",
+      "thumbnail": "video_files/oAFjg8ceMHoMXeyItZQixmQkMCkICexARbjQNA.mp4_thumb.jpg",
+      "media_type": "video_file",
+      "mime_type": "video/mp4",
+      "duration_seconds": 26,
+      "width": 576,
+      "height": 1024,
+      "text": "\u041a\u043e\u0433\u0434\u0430 \u0443\u0434\u0430\u0440\u0438\u043b\u0441\u044f \u043c\u0438\u0437\u0438\u043d\u0446\u0435\u043c \u043e\u0431 \u0443\u0433\u043e\u043b \u043a\u0440\u043e\u0432\u0430\u0442\u0438:",
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u041a\u043e\u0433\u0434\u0430 \u0443\u0434\u0430\u0440\u0438\u043b\u0441\u044f \u043c\u0438\u0437\u0438\u043d\u0446\u0435\u043c \u043e\u0431 \u0443\u0433\u043e\u043b \u043a\u0440\u043e\u0432\u0430\u0442\u0438:"
+        }
+      ]
+    },
+    {
+      "id": 5536,
+      "type": "message",
+      "date": "2024-04-18T16:11:08",
+      "date_unixtime": "1713442268",
+      "edited": "2024-04-18T16:11:35",
+      "edited_unixtime": "1713442295",
+      "from": "\u0417\u043e\u043e\u041c\u0438\u0440",
+      "from_id": "channel1400984977",
+      "file": "video_files/IMG_8564.MP4",
+      "file_name": "IMG_8564.MP4",
+      "thumbnail": "video_files/IMG_8564.MP4_thumb.jpg",
+      "media_type": "video_file",
+      "mime_type": "video/mp4",
+      "duration_seconds": 9,
+      "width": 352,
+      "height": 624,
+      "text": [
+        "\u041a\u0430\u043a \u0432\u044b \u043c\u0435\u043d\u044f \u0432\u0441\u0435 \u0434\u043e\u0441\u0442\u0430\u043b\u0438\u2026\n\n",
+        {
+          "type": "text_link",
+          "text": "\u0417\u043e\u043e\u041c\u0438\u0440",
+          "href": "https://t.me/+EdTVCcf9RTVkZjZi"
+        },
+        {
+          "type": "text_link",
+          "text": "\ud83d\udc3c",
+          "href": "https://t.me/+EdTVCcf9RTVkZjZi"
+        },
+        ""
+      ],
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u041a\u0430\u043a \u0432\u044b \u043c\u0435\u043d\u044f \u0432\u0441\u0435 \u0434\u043e\u0441\u0442\u0430\u043b\u0438\u2026\n\n"
+        },
+        {
+          "type": "text_link",
+          "text": "\u0417\u043e\u043e\u041c\u0438\u0440",
+          "href": "https://t.me/+EdTVCcf9RTVkZjZi"
+        },
+        {
+          "type": "text_link",
+          "text": "\ud83d\udc3c",
+          "href": "https://t.me/+EdTVCcf9RTVkZjZi"
+        },
+        {
+          "type": "plain",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": 5537,
+      "type": "message",
+      "date": "2024-04-18T19:19:01",
+      "date_unixtime": "1713453541",
+      "edited": "2024-04-18T19:19:08",
+      "edited_unixtime": "1713453548",
+      "from": "\u0417\u043e\u043e\u041c\u0438\u0440",
+      "from_id": "channel1400984977",
+      "file": "video_files/IMG_8566.MP4",
+      "file_name": "IMG_8566.MP4",
+      "thumbnail": "video_files/IMG_8566.MP4_thumb.jpg",
+      "media_type": "video_file",
+      "mime_type": "video/mp4",
+      "duration_seconds": 12,
+      "width": 336,
+      "height": 640,
+      "text": [
+        "\u041f\u043e\u0442\u044f\u0433\u0443\u0448\u0435\u0447\u043a\u0438\ud83d\ude0a\n\n",
+        {
+          "type": "text_link",
+          "text": "\u0417\u043e\u043e\u041c\u0438\u0440",
+          "href": "https://t.me/+EdTVCcf9RTVkZjZi"
+        },
+        {
+          "type": "text_link",
+          "text": "\ud83d\udc3c",
+          "href": "https://t.me/+EdTVCcf9RTVkZjZi"
+        },
+        ""
+      ],
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u041f\u043e\u0442\u044f\u0433\u0443\u0448\u0435\u0447\u043a\u0438\ud83d\ude0a\n\n"
+        },
+        {
+          "type": "text_link",
+          "text": "\u0417\u043e\u043e\u041c\u0438\u0440",
+          "href": "https://t.me/+EdTVCcf9RTVkZjZi"
+        },
+        {
+          "type": "text_link",
+          "text": "\ud83d\udc3c",
+          "href": "https://t.me/+EdTVCcf9RTVkZjZi"
+        },
+        {
+          "type": "plain",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": 2920,
+      "type": "message",
+      "date": "2024-04-18T09:02:07",
+      "date_unixtime": "1713416527",
+      "edited": "2024-04-18T09:02:55",
+      "edited_unixtime": "1713416575",
+      "from": "\u041f\u0451\u0441\u0435\u043b\u044c\u043d\u0430\u044f",
+      "from_id": "channel1972830020",
+      "file": "video_files/IMG_4280.MP4",
+      "file_name": "IMG_4280.MP4",
+      "thumbnail": "video_files/IMG_4280.MP4_thumb.jpg",
+      "media_type": "video_file",
+      "mime_type": "video/mp4",
+      "duration_seconds": 78,
+      "width": 352,
+      "height": 352,
+      "text": [
+        "\u0410 \u0412\u044b \u0437\u0430 \u043a\u043e\u0433\u043e \u0431\u043e\u043b\u0435\u0435\u0442\u0435?\n\n",
+        {
+          "type": "text_link",
+          "text": "\u041f\u0451\u0441\u0435\u043b\u044c\u043d\u0430\u044f",
+          "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+        },
+        ""
+      ],
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u0410 \u0412\u044b \u0437\u0430 \u043a\u043e\u0433\u043e \u0431\u043e\u043b\u0435\u0435\u0442\u0435?\n\n"
+        },
+        {
+          "type": "text_link",
+          "text": "\u041f\u0451\u0441\u0435\u043b\u044c\u043d\u0430\u044f",
+          "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+        },
+        {
+          "type": "plain",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": 2922,
+      "type": "message",
+      "date": "2024-04-18T12:03:07",
+      "date_unixtime": "1713427387",
+      "edited": "2024-04-18T12:04:12",
+      "edited_unixtime": "1713427452",
+      "from": "\u041f\u0451\u0441\u0435\u043b\u044c\u043d\u0430\u044f",
+      "from_id": "channel1972830020",
+      "file": "video_files/IMG_4301.MP4",
+      "file_name": "IMG_4301.MP4",
+      "thumbnail": "video_files/IMG_4301.MP4_thumb.jpg",
+      "media_type": "video_file",
+      "mime_type": "video/mp4",
+      "duration_seconds": 13,
+      "width": 336,
+      "height": 640,
+      "text": [
+        "\u041a\u0440\u0430\u0441\u0438\u0432\u043e \u0432\u044b\u0448\u0435\u043b\ud83e\udd23\n\n",
+        {
+          "type": "text_link",
+          "text": "\u041f\u0451\u0441\u0435\u043b\u044c\u043d\u0430\u044f",
+          "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+        },
+        ""
+      ],
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u041a\u0440\u0430\u0441\u0438\u0432\u043e \u0432\u044b\u0448\u0435\u043b\ud83e\udd23\n\n"
+        },
+        {
+          "type": "text_link",
+          "text": "\u041f\u0451\u0441\u0435\u043b\u044c\u043d\u0430\u044f",
+          "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+        },
+        {
+          "type": "plain",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": 2923,
+      "type": "message",
+      "date": "2024-04-18T13:01:06",
+      "date_unixtime": "1713430866",
+      "edited": "2024-04-18T13:01:45",
+      "edited_unixtime": "1713430905",
+      "from": "\u041f\u0451\u0441\u0435\u043b\u044c\u043d\u0430\u044f",
+      "from_id": "channel1972830020",
+      "file": "video_files/IMG_4269.MP4",
+      "file_name": "IMG_4269.MP4",
+      "thumbnail": "video_files/IMG_4269.MP4_thumb.jpg",
+      "media_type": "video_file",
+      "mime_type": "video/mp4",
+      "duration_seconds": 53,
+      "width": 480,
+      "height": 592,
+      "text": [
+        "\u041c\u0435\u043b\u043a\u0430\u044f \u0436\u0430\u0434\u0438\u043d\u0430 \u0440\u0430\u0441\u0442\u0451\u0442\ud83d\ude05\n\n",
+        {
+          "type": "text_link",
+          "text": "\u041f\u0451\u0441\u0435\u043b\u044c\u043d\u0430\u044f",
+          "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+        },
+        ""
+      ],
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u041c\u0435\u043b\u043a\u0430\u044f \u0436\u0430\u0434\u0438\u043d\u0430 \u0440\u0430\u0441\u0442\u0451\u0442\ud83d\ude05\n\n"
+        },
+        {
+          "type": "text_link",
+          "text": "\u041f\u0451\u0441\u0435\u043b\u044c\u043d\u0430\u044f",
+          "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+        },
+        {
+          "type": "plain",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": 2928,
+      "type": "message",
+      "date": "2024-04-18T21:10:08",
+      "date_unixtime": "1713460208",
+      "edited": "2024-04-18T21:10:21",
+      "edited_unixtime": "1713460221",
+      "from": "\u041f\u0451\u0441\u0435\u043b\u044c\u043d\u0430\u044f",
+      "from_id": "channel1972830020",
+      "file": "video_files/IMG_4296.MP4",
+      "file_name": "IMG_4296.MP4",
+      "thumbnail": "video_files/IMG_4296.MP4_thumb.jpg",
+      "media_type": "video_file",
+      "mime_type": "video/mp4",
+      "duration_seconds": 13,
+      "width": 352,
+      "height": 640,
+      "text": [
+        "\u041c\u0435\u0445\u043e\u0432\u0430\u044f \u043f\u043e\u0434\u0443\u0448\u043a\u0430\ud83e\udd23\n\n",
+        {
+          "type": "text_link",
+          "text": "\u041f\u0451\u0441\u0435\u043b\u044c\u043d\u0430\u044f",
+          "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+        },
+        ""
+      ],
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u041c\u0435\u0445\u043e\u0432\u0430\u044f \u043f\u043e\u0434\u0443\u0448\u043a\u0430\ud83e\udd23\n\n"
+        },
+        {
+          "type": "text_link",
+          "text": "\u041f\u0451\u0441\u0435\u043b\u044c\u043d\u0430\u044f",
+          "href": "https://t.me/+jY-C4oLVuJZiZjQy"
+        },
+        {
+          "type": "plain",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": 16895,
+      "type": "message",
+      "date": "2024-04-18T00:52:57",
+      "date_unixtime": "1713387177",
+      "edited": "2024-04-18T00:59:55",
+      "edited_unixtime": "1713387595",
+      "from": "\u0432\u0441\u0440\u0430\u0442\u044b\u0435 \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0435",
+      "from_id": "channel1146263928",
+      "file": "video_files/IMG_0155.MP4",
+      "file_name": "IMG_0155.MP4",
+      "thumbnail": "video_files/IMG_0155.MP4_thumb.jpg",
+      "media_type": "video_file",
+      "mime_type": "video/mp4",
+      "duration_seconds": 83,
+      "width": 464,
+      "height": 848,
+      "text": "",
+      "text_entities": []
+    },
+    {
+      "id": 16898,
+      "type": "message",
+      "date": "2024-04-18T22:40:09",
+      "date_unixtime": "1713465609",
+      "edited": "2024-04-18T22:42:56",
+      "edited_unixtime": "1713465776",
+      "from": "\u0432\u0441\u0440\u0430\u0442\u044b\u0435 \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0435",
+      "from_id": "channel1146263928",
+      "file": "video_files/IMG_0186.MP4",
+      "file_name": "IMG_0186.MP4",
+      "thumbnail": "video_files/IMG_0186.MP4_thumb.jpg",
+      "media_type": "video_file",
+      "mime_type": "video/mp4",
+      "duration_seconds": 8,
+      "width": 720,
+      "height": 1280,
+      "text": "",
+      "text_entities": []
+    },
+    {
+      "id": 16899,
+      "type": "message",
+      "date": "2024-04-18T23:07:30",
+      "date_unixtime": "1713467250",
+      "edited": "2024-04-18T23:12:12",
+      "edited_unixtime": "1713467532",
+      "from": "\u0432\u0441\u0440\u0430\u0442\u044b\u0435 \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0435",
+      "from_id": "channel1146263928",
+      "photo": "photos/photo_10547@18-04-2024_23-07-30.jpg",
+      "width": 1280,
+      "height": 1280,
+      "text": "",
+      "text_entities": []
+    },
+    {
+      "id": 16900,
+      "type": "message",
+      "date": "2024-04-18T23:10:46",
+      "date_unixtime": "1713467446",
+      "edited": "2024-04-18T23:13:45",
+      "edited_unixtime": "1713467625",
+      "from": "\u0432\u0441\u0440\u0430\u0442\u044b\u0435 \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0435",
+      "from_id": "channel1146263928",
+      "photo": "photos/photo_10548@18-04-2024_23-10-46.jpg",
+      "width": 960,
+      "height": 1280,
+      "text": "",
+      "text_entities": []
+    },
+    {
+      "id": 26504,
+      "type": "message",
+      "date": "2024-04-18T09:00:36",
+      "date_unixtime": "1713416436",
+      "edited": "2024-04-18T09:00:43",
+      "edited_unixtime": "1713416443",
+      "from": "\u0448\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438 \u2022 \u043a\u043e\u0442\u044b",
+      "from_id": "channel1283644155",
+      "file": "video_files/IMG_4928.MP4",
+      "file_name": "IMG_4928.MP4",
+      "thumbnail": "video_files/IMG_4928.MP4_thumb.jpg",
+      "media_type": "animation",
+      "mime_type": "video/mp4",
+      "duration_seconds": 10,
+      "width": 720,
+      "height": 1280,
+      "text": [
+        "\u0422\u0430\u043a \u0432\u044b\u0433\u043b\u044f\u0434\u0438\u0442 \u043f\u0451\u0441, \u0432\u043e\u0441\u043f\u0438\u0442\u0430\u043d\u043d\u044b\u0439 \u043a\u043e\u0442\u0430\u043c\u0438\ud83d\ude02\n\n",
+        {
+          "type": "custom_emoji",
+          "text": "\u2665\ufe0f",
+          "document_id": "stickers/sticker.webp"
+        },
+        " ",
+        {
+          "type": "text_link",
+          "text": "\u0428\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438",
+          "href": "https://t.me/+YyZAC53UIwk4MTFi"
+        },
+        ""
+      ],
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u0422\u0430\u043a \u0432\u044b\u0433\u043b\u044f\u0434\u0438\u0442 \u043f\u0451\u0441, \u0432\u043e\u0441\u043f\u0438\u0442\u0430\u043d\u043d\u044b\u0439 \u043a\u043e\u0442\u0430\u043c\u0438\ud83d\ude02\n\n"
+        },
+        {
+          "type": "custom_emoji",
+          "text": "\u2665\ufe0f",
+          "document_id": "stickers/sticker.webp"
+        },
+        {
+          "type": "plain",
+          "text": " "
+        },
+        {
+          "type": "text_link",
+          "text": "\u0428\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438",
+          "href": "https://t.me/+YyZAC53UIwk4MTFi"
+        },
+        {
+          "type": "plain",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": 26507,
+      "type": "message",
+      "date": "2024-04-18T12:17:11",
+      "date_unixtime": "1713428231",
+      "edited": "2024-04-18T12:17:18",
+      "edited_unixtime": "1713428238",
+      "from": "\u0448\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438 \u2022 \u043a\u043e\u0442\u044b",
+      "from_id": "channel1283644155",
+      "photo": "photos/photo_3864@18-04-2024_12-17-11.jpg",
+      "width": 1258,
+      "height": 1278,
+      "text": [
+        "\u0418\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0434\u043e\u043c\u0430 \u043d\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u2026\n\n",
+        {
+          "type": "custom_emoji",
+          "text": "\u2665\ufe0f",
+          "document_id": "stickers/sticker.webp"
+        },
+        " ",
+        {
+          "type": "text_link",
+          "text": "\u0428\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438",
+          "href": "https://t.me/+YyZAC53UIwk4MTFi"
+        },
+        ""
+      ],
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u0418\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0434\u043e\u043c\u0430 \u043d\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u2026\n\n"
+        },
+        {
+          "type": "custom_emoji",
+          "text": "\u2665\ufe0f",
+          "document_id": "stickers/sticker.webp"
+        },
+        {
+          "type": "plain",
+          "text": " "
+        },
+        {
+          "type": "text_link",
+          "text": "\u0428\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438",
+          "href": "https://t.me/+YyZAC53UIwk4MTFi"
+        },
+        {
+          "type": "plain",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": 26508,
+      "type": "message",
+      "date": "2024-04-18T13:29:44",
+      "date_unixtime": "1713432584",
+      "edited": "2024-04-18T13:29:47",
+      "edited_unixtime": "1713432587",
+      "from": "\u0448\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438 \u2022 \u043a\u043e\u0442\u044b",
+      "from_id": "channel1283644155",
+      "file": "video_files/IMG_4927.MP4",
+      "file_name": "IMG_4927.MP4",
+      "thumbnail": "video_files/IMG_4927.MP4_thumb.jpg",
+      "media_type": "video_file",
+      "mime_type": "video/mp4",
+      "duration_seconds": 17,
+      "width": 720,
+      "height": 1280,
+      "text": [
+        "\u041a\u0430\u043a\u043e\u0439 \u043c\u0438\u043b\u044b\u0439 \u043a\u043e\u0442\u0438\u043a\ud83d\udc40\n\n",
+        {
+          "type": "custom_emoji",
+          "text": "\u2665\ufe0f",
+          "document_id": "stickers/sticker.webp"
+        },
+        " ",
+        {
+          "type": "text_link",
+          "text": "\u0428\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438",
+          "href": "https://t.me/+YyZAC53UIwk4MTFi"
+        },
+        ""
+      ],
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u041a\u0430\u043a\u043e\u0439 \u043c\u0438\u043b\u044b\u0439 \u043a\u043e\u0442\u0438\u043a\ud83d\udc40\n\n"
+        },
+        {
+          "type": "custom_emoji",
+          "text": "\u2665\ufe0f",
+          "document_id": "stickers/sticker.webp"
+        },
+        {
+          "type": "plain",
+          "text": " "
+        },
+        {
+          "type": "text_link",
+          "text": "\u0428\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438",
+          "href": "https://t.me/+YyZAC53UIwk4MTFi"
+        },
+        {
+          "type": "plain",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": 26511,
+      "type": "message",
+      "date": "2024-04-18T19:19:22",
+      "date_unixtime": "1713453562",
+      "edited": "2024-04-18T19:25:04",
+      "edited_unixtime": "1713453904",
+      "from": "\u0448\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438 \u2022 \u043a\u043e\u0442\u044b",
+      "from_id": "channel1283644155",
+      "file": "video_files/IMG_1570.MP4",
+      "file_name": "IMG_1570.MP4",
+      "thumbnail": "video_files/IMG_1570.MP4_thumb.jpg",
+      "media_type": "video_file",
+      "mime_type": "video/mp4",
+      "duration_seconds": 20,
+      "width": 608,
+      "height": 1264,
+      "text": [
+        "\u041d\u0430\u0441\u0442\u0440\u043e\u0435\u043d\u0438\u0435 \u043d\u0430 \u0434\u0430\u043d\u043d\u044b\u0439 \u043c\u043e\u043c\u0435\u043d\u0442 \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e \u0442\u0430\u043a\u043e\u0435:\n\n",
+        {
+          "type": "italic",
+          "text": "(\u0441\u043e \u0437\u0432\u0443\u043a\u043e\u043c)"
+        },
+        "\n\n",
+        {
+          "type": "custom_emoji",
+          "text": "\u2665\ufe0f",
+          "document_id": "stickers/sticker.webp"
+        },
+        " ",
+        {
+          "type": "text_link",
+          "text": "\u0428\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438",
+          "href": "https://t.me/+YyZAC53UIwk4MTFi"
+        },
+        ""
+      ],
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u041d\u0430\u0441\u0442\u0440\u043e\u0435\u043d\u0438\u0435 \u043d\u0430 \u0434\u0430\u043d\u043d\u044b\u0439 \u043c\u043e\u043c\u0435\u043d\u0442 \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e \u0442\u0430\u043a\u043e\u0435:\n\n"
+        },
+        {
+          "type": "italic",
+          "text": "(\u0441\u043e \u0437\u0432\u0443\u043a\u043e\u043c)"
+        },
+        {
+          "type": "plain",
+          "text": "\n\n"
+        },
+        {
+          "type": "custom_emoji",
+          "text": "\u2665\ufe0f",
+          "document_id": "stickers/sticker.webp"
+        },
+        {
+          "type": "plain",
+          "text": " "
+        },
+        {
+          "type": "text_link",
+          "text": "\u0428\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438",
+          "href": "https://t.me/+YyZAC53UIwk4MTFi"
+        },
+        {
+          "type": "plain",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": 26512,
+      "type": "message",
+      "date": "2024-04-18T20:27:29",
+      "date_unixtime": "1713457649",
+      "edited": "2024-04-18T20:27:36",
+      "edited_unixtime": "1713457656",
+      "from": "\u0448\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438 \u2022 \u043a\u043e\u0442\u044b",
+      "from_id": "channel1283644155",
+      "file": "video_files/IMG_4877.MP4",
+      "file_name": "IMG_4877.MP4",
+      "thumbnail": "video_files/IMG_4877.MP4_thumb.jpg",
+      "media_type": "video_file",
+      "mime_type": "video/mp4",
+      "duration_seconds": 12,
+      "width": 688,
+      "height": 1258,
+      "text": [
+        "\u0421\u0438\u0441\u0430\u0434\u043c\u0438\u043d \u043f\u0435\u0440\u0432\u044b\u0439 \u0434\u0435\u043d\u044c \u043d\u0430 \u0440\u0430\u0431\u043e\u0442\u0435\ud83e\udee0\n\n",
+        {
+          "type": "custom_emoji",
+          "text": "\u2665\ufe0f",
+          "document_id": "stickers/sticker.webp"
+        },
+        " ",
+        {
+          "type": "text_link",
+          "text": "\u0428\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438",
+          "href": "https://t.me/+YyZAC53UIwk4MTFi"
+        },
+        ""
+      ],
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u0421\u0438\u0441\u0430\u0434\u043c\u0438\u043d \u043f\u0435\u0440\u0432\u044b\u0439 \u0434\u0435\u043d\u044c \u043d\u0430 \u0440\u0430\u0431\u043e\u0442\u0435\ud83e\udee0\n\n"
+        },
+        {
+          "type": "custom_emoji",
+          "text": "\u2665\ufe0f",
+          "document_id": "stickers/sticker.webp"
+        },
+        {
+          "type": "plain",
+          "text": " "
+        },
+        {
+          "type": "text_link",
+          "text": "\u0428\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438",
+          "href": "https://t.me/+YyZAC53UIwk4MTFi"
+        },
+        {
+          "type": "plain",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": 26513,
+      "type": "message",
+      "date": "2024-04-18T21:27:46",
+      "date_unixtime": "1713461266",
+      "edited": "2024-04-18T21:27:54",
+      "edited_unixtime": "1713461274",
+      "from": "\u0448\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438 \u2022 \u043a\u043e\u0442\u044b",
+      "from_id": "channel1283644155",
+      "file": "video_files/IMG_4952.MP4",
+      "file_name": "IMG_4952.MP4",
+      "thumbnail": "video_files/IMG_4952.MP4_thumb.jpg",
+      "media_type": "video_file",
+      "mime_type": "video/mp4",
+      "duration_seconds": 28,
+      "width": 720,
+      "height": 1278,
+      "text": [
+        "\u041c\u0430\u043b\u044c\u0447\u0438\u043a \u043f\u0440\u0438\u0448\u0451\u043b \u0432 \u043f\u0440\u0438\u044e\u0442 \u0434\u043b\u044f \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0445, \u0447\u0442\u043e\u0431\u044b \u0432\u044b\u0431\u0440\u0430\u0442\u044c \u0441\u0435\u0431\u0435 \u043f\u0438\u0442\u043e\u043c\u0446\u0430, \u043d\u043e \u043f\u0443\u0448\u0438\u0441\u0442\u044b\u0439 \u0443\u0436\u0435 \u0441\u0434\u0435\u043b\u0430\u043b \u0432\u044b\u0431\u043e\u0440 \u0437\u0430 \u043d\u0435\u0433\u043e\ud83e\udd70\n\n",
+        {
+          "type": "custom_emoji",
+          "text": "\u2665\ufe0f",
+          "document_id": "stickers/sticker.webp"
+        },
+        " ",
+        {
+          "type": "text_link",
+          "text": "\u0428\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438",
+          "href": "https://t.me/+YyZAC53UIwk4MTFi"
+        },
+        ""
+      ],
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u041c\u0430\u043b\u044c\u0447\u0438\u043a \u043f\u0440\u0438\u0448\u0451\u043b \u0432 \u043f\u0440\u0438\u044e\u0442 \u0434\u043b\u044f \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0445, \u0447\u0442\u043e\u0431\u044b \u0432\u044b\u0431\u0440\u0430\u0442\u044c \u0441\u0435\u0431\u0435 \u043f\u0438\u0442\u043e\u043c\u0446\u0430, \u043d\u043e \u043f\u0443\u0448\u0438\u0441\u0442\u044b\u0439 \u0443\u0436\u0435 \u0441\u0434\u0435\u043b\u0430\u043b \u0432\u044b\u0431\u043e\u0440 \u0437\u0430 \u043d\u0435\u0433\u043e\ud83e\udd70\n\n"
+        },
+        {
+          "type": "custom_emoji",
+          "text": "\u2665\ufe0f",
+          "document_id": "stickers/sticker.webp"
+        },
+        {
+          "type": "plain",
+          "text": " "
+        },
+        {
+          "type": "text_link",
+          "text": "\u0428\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438",
+          "href": "https://t.me/+YyZAC53UIwk4MTFi"
+        },
+        {
+          "type": "plain",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": 26516,
+      "type": "message",
+      "date": "2024-04-18T23:39:42",
+      "date_unixtime": "1713469182",
+      "edited": "2024-04-18T23:39:54",
+      "edited_unixtime": "1713469194",
+      "from": "\u0448\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438 \u2022 \u043a\u043e\u0442\u044b",
+      "from_id": "channel1283644155",
+      "file": "video_files/IMG_4930.MP4",
+      "file_name": "IMG_4930.MP4",
+      "thumbnail": "video_files/IMG_4930.MP4_thumb.jpg",
+      "media_type": "animation",
+      "mime_type": "video/mp4",
+      "duration_seconds": 8,
+      "width": 1024,
+      "height": 1262,
+      "text": [
+        "\u041d\u0435\u0442 \u043d\u0438\u0442\u0438\u0432\u043e \u043b\u0443\u0447\u0448\u0435 \u0447\u0435\u043c \u0441\u043f\u043e\u0442\u044c\ud83d\ude34\n\n",
+        {
+          "type": "custom_emoji",
+          "text": "\u2665\ufe0f",
+          "document_id": "stickers/sticker.webp"
+        },
+        " ",
+        {
+          "type": "text_link",
+          "text": "\u0428\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438",
+          "href": "https://t.me/+YyZAC53UIwk4MTFi"
+        },
+        ""
+      ],
+      "text_entities": [
+        {
+          "type": "plain",
+          "text": "\u041d\u0435\u0442 \u043d\u0438\u0442\u0438\u0432\u043e \u043b\u0443\u0447\u0448\u0435 \u0447\u0435\u043c \u0441\u043f\u043e\u0442\u044c\ud83d\ude34\n\n"
+        },
+        {
+          "type": "custom_emoji",
+          "text": "\u2665\ufe0f",
+          "document_id": "stickers/sticker.webp"
+        },
+        {
+          "type": "plain",
+          "text": " "
+        },
+        {
+          "type": "text_link",
+          "text": "\u0428\u0435\u0440\u0441\u0442\u044f\u043d\u044b\u0435 \u043f\u0440\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0438",
+          "href": "https://t.me/+YyZAC53UIwk4MTFi"
+        },
+        {
+          "type": "plain",
+          "text": ""
+        }
+      ]
     }
-   ]
-  },
-  {
-   "id": 3058,
-   "type": "message",
-   "date": "2024-05-01T12:01:06",
-   "date_unixtime": "1714550466",
-   "edited": "2024-05-01T12:01:35",
-   "edited_unixtime": "1714550495",
-   "from": "Пёсельная",
-   "from_id": "channel1972830020",
-   "file": "video_files/IMG_3790.MP4",
-   "file_name": "IMG_3790.MP4",
-   "thumbnail": "video_files/IMG_3790.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 5,
-   "width": 352,
-   "height": 640,
-   "text": [
-    "Гондольер и его друг☺️\n\n",
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Гондольер и его друг☺️\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 3059,
-   "type": "message",
-   "date": "2024-05-01T13:01:01",
-   "date_unixtime": "1714554061",
-   "edited": "2024-05-01T13:02:14",
-   "edited_unixtime": "1714554134",
-   "from": "Пёсельная",
-   "from_id": "channel1972830020",
-   "file": "video_files/IMG_5260.MP4",
-   "file_name": "IMG_5260.MP4",
-   "thumbnail": "video_files/IMG_5260.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 8,
-   "width": 640,
-   "height": 640,
-   "text": [
-    "Каждый день после работы🙈\n\n",
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Каждый день после работы🙈\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 3060,
-   "type": "message",
-   "date": "2024-05-01T15:01:04",
-   "date_unixtime": "1714561264",
-   "edited": "2024-05-01T15:01:10",
-   "edited_unixtime": "1714561270",
-   "from": "Пёсельная",
-   "from_id": "channel1972830020",
-   "file": "video_files/IMG_8573.MP4",
-   "file_name": "IMG_8573.MP4",
-   "thumbnail": "video_files/IMG_8573.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 7,
-   "width": 352,
-   "height": 640,
-   "text": [
-    "Собачий шейх😇\n\n",
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Собачий шейх😇\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 3061,
-   "type": "message",
-   "date": "2024-05-01T17:04:05",
-   "date_unixtime": "1714568645",
-   "edited": "2024-05-01T17:04:13",
-   "edited_unixtime": "1714568653",
-   "from": "Пёсельная",
-   "from_id": "channel1972830020",
-   "file": "video_files/IMG_5261.MP4",
-   "file_name": "IMG_5261.MP4",
-   "thumbnail": "video_files/IMG_5261.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 16,
-   "width": 480,
-   "height": 480,
-   "text": [
-    "Вы только посмотрите, какой мячик😊\n\n",
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Вы только посмотрите, какой мячик😊\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 3062,
-   "type": "message",
-   "date": "2024-05-01T19:01:07",
-   "date_unixtime": "1714575667",
-   "edited": "2024-05-01T19:01:12",
-   "edited_unixtime": "1714575672",
-   "from": "Пёсельная",
-   "from_id": "channel1972830020",
-   "file": "video_files/IMG_5265.MP4",
-   "file_name": "IMG_5265.MP4",
-   "thumbnail": "video_files/IMG_5265.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 13,
-   "width": 464,
-   "height": 640,
-   "text": [
-    "Кажется,пора делать ремонт😅\n\n",
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Кажется,пора делать ремонт😅\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 3063,
-   "type": "message",
-   "date": "2024-05-01T21:32:57",
-   "date_unixtime": "1714584777",
-   "edited": "2024-05-01T21:33:07",
-   "edited_unixtime": "1714584787",
-   "from": "Пёсельная",
-   "from_id": "channel1972830020",
-   "file": "video_files/IMG_5252.MP4",
-   "file_name": "IMG_5252.MP4",
-   "thumbnail": "video_files/IMG_5252.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 18,
-   "width": 352,
-   "height": 640,
-   "text": [
-    "Что за странный прибор?!\n\n",
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Что за странный прибор?!\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 3064,
-   "type": "message",
-   "date": "2024-05-02T09:02:10",
-   "date_unixtime": "1714626130",
-   "edited": "2024-05-02T09:02:47",
-   "edited_unixtime": "1714626167",
-   "from": "Пёсельная",
-   "from_id": "channel1972830020",
-   "file": "video_files/IMG_5248.MP4",
-   "file_name": "IMG_5248.MP4",
-   "thumbnail": "video_files/IMG_5248.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 34,
-   "width": 512,
-   "height": 640,
-   "text": [
-    "Искренняя радость😍\n\n",
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Искренняя радость😍\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 3066,
-   "type": "message",
-   "date": "2024-05-02T11:03:07",
-   "date_unixtime": "1714633387",
-   "edited": "2024-05-02T11:03:15",
-   "edited_unixtime": "1714633395",
-   "from": "Пёсельная",
-   "from_id": "channel1972830020",
-   "file": "video_files/IMG_8357.MP4",
-   "file_name": "IMG_8357.MP4",
-   "thumbnail": "video_files/IMG_8357.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 10,
-   "width": 352,
-   "height": 640,
-   "text": [
-    "Пузатик сладкий🥰\n\n",
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Пузатик сладкий🥰\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 3067,
-   "type": "message",
-   "date": "2024-05-02T13:01:05",
-   "date_unixtime": "1714640465",
-   "edited": "2024-05-02T13:01:18",
-   "edited_unixtime": "1714640478",
-   "from": "Пёсельная",
-   "from_id": "channel1972830020",
-   "file": "video_files/IMG_5258.MP4",
-   "file_name": "IMG_5258.MP4",
-   "thumbnail": "video_files/IMG_5258.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 40,
-   "width": 416,
-   "height": 416,
-   "text": [
-    "Опасные игры🫣\n\n",
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Опасные игры🫣\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 3069,
-   "type": "message",
-   "date": "2024-05-02T17:00:22",
-   "date_unixtime": "1714654822",
-   "edited": "2024-05-02T17:01:41",
-   "edited_unixtime": "1714654901",
-   "from": "Пёсельная",
-   "from_id": "channel1972830020",
-   "file": "video_files/IMG_5262.MP4",
-   "file_name": "IMG_5262.MP4",
-   "thumbnail": "video_files/IMG_5262.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 14,
-   "width": 352,
-   "height": 640,
-   "text": [
-    "Живое украшение😍\n\n",
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Живое украшение😍\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 3070,
-   "type": "message",
-   "date": "2024-05-02T18:12:29",
-   "date_unixtime": "1714659149",
-   "edited": "2024-05-02T18:12:59",
-   "edited_unixtime": "1714659179",
-   "from": "Пёсельная",
-   "from_id": "channel1972830020",
-   "file": "video_files/IMG_5275.MP4",
-   "file_name": "IMG_5275.MP4",
-   "thumbnail": "video_files/IMG_5275.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 5,
-   "width": 352,
-   "height": 640,
-   "text": [
-    "Отправляю своей второй половинке🙈\n\n",
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Отправляю своей второй половинке🙈\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 3072,
-   "type": "message",
-   "date": "2024-05-02T21:03:06",
-   "date_unixtime": "1714669386",
-   "edited": "2024-05-02T21:04:10",
-   "edited_unixtime": "1714669450",
-   "from": "Пёсельная",
-   "from_id": "channel1972830020",
-   "file": "video_files/IMG_5273.MP4",
-   "file_name": "IMG_5273.MP4",
-   "thumbnail": "video_files/IMG_5273.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 17,
-   "width": 352,
-   "height": 640,
-   "text": [
-    "Где взять такой рюкзак?\n\n",
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Где взять такой рюкзак?\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 3073,
-   "type": "message",
-   "date": "2024-05-02T22:13:07",
-   "date_unixtime": "1714673587",
-   "edited": "2024-05-02T22:13:42",
-   "edited_unixtime": "1714673622",
-   "from": "Пёсельная",
-   "from_id": "channel1972830020",
-   "file": "video_files/IMG_5267.MP4",
-   "file_name": "IMG_5267.MP4",
-   "thumbnail": "video_files/IMG_5267.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 11,
-   "width": 352,
-   "height": 640,
-   "text": [
-    "Да как же тебя достать?!\n\n",
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Да как же тебя достать?!\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "Пёсельная",
-     "href": "https://t.me/+jY-C4oLVuJZiZjQy"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 16975,
-   "type": "message",
-   "date": "2024-05-01T22:35:47",
-   "date_unixtime": "1714588547",
-   "edited": "2024-05-01T22:36:17",
-   "edited_unixtime": "1714588577",
-   "from": "всратые животные",
-   "from_id": "channel1146263928",
-   "file": "video_files/IMG_0520.MP4",
-   "file_name": "IMG_0520.MP4",
-   "thumbnail": "video_files/IMG_0520.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 5,
-   "width": 880,
-   "height": 1280,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 16976,
-   "type": "message",
-   "date": "2024-05-02T00:01:01",
-   "date_unixtime": "1714593661",
-   "edited": "2024-05-02T00:02:41",
-   "edited_unixtime": "1714593761",
-   "from": "всратые животные",
-   "from_id": "channel1146263928",
-   "photo": "photos/photo_10579@02-05-2024_00-01-01.jpg",
-   "width": 1017,
-   "height": 1017,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 16977,
-   "type": "message",
-   "date": "2024-05-02T10:23:20",
-   "date_unixtime": "1714631000",
-   "edited": "2024-05-02T10:26:08",
-   "edited_unixtime": "1714631168",
-   "from": "всратые животные",
-   "from_id": "channel1146263928",
-   "photo": "photos/photo_10580@02-05-2024_10-23-20.jpg",
-   "width": 900,
-   "height": 799,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 16978,
-   "type": "message",
-   "date": "2024-05-02T17:08:21",
-   "date_unixtime": "1714655301",
-   "edited": "2024-05-02T17:09:08",
-   "edited_unixtime": "1714655348",
-   "from": "всратые животные",
-   "from_id": "channel1146263928",
-   "file": "video_files/IMG_0561.MP4",
-   "file_name": "IMG_0561.MP4",
-   "thumbnail": "video_files/IMG_0561.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 7,
-   "width": 720,
-   "height": 1280,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 16979,
-   "type": "message",
-   "date": "2024-05-02T23:50:55",
-   "date_unixtime": "1714679455",
-   "edited": "2024-05-02T23:55:33",
-   "edited_unixtime": "1714679733",
-   "from": "всратые животные",
-   "from_id": "channel1146263928",
-   "file": "video_files/IMG_0595.MP4",
-   "file_name": "IMG_0595.MP4",
-   "thumbnail": "video_files/IMG_0595.MP4_thumb.jpg",
-   "media_type": "animation",
-   "mime_type": "video/mp4",
-   "duration_seconds": 9,
-   "width": 864,
-   "height": 1280,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 44525,
-   "type": "message",
-   "date": "2024-05-01T01:07:56",
-   "date_unixtime": "1714511276",
-   "edited": "2024-05-01T01:08:03",
-   "edited_unixtime": "1714511283",
-   "from": "Бляцкие коты",
-   "from_id": "channel1142011374",
-   "file": "video_files/IMG_4917.MP4",
-   "file_name": "IMG_4917.MP4",
-   "thumbnail": "video_files/IMG_4917.MP4_thumb.jpg",
-   "media_type": "animation",
-   "mime_type": "video/mp4",
-   "duration_seconds": 14,
-   "width": 992,
-   "height": 1262,
-   "text": "Засипаем :3",
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Засипаем :3"
-    }
-   ]
-  },
-  {
-   "id": 44526,
-   "type": "message",
-   "date": "2024-05-01T12:44:13",
-   "date_unixtime": "1714553053",
-   "edited": "2024-05-01T12:44:16",
-   "edited_unixtime": "1714553056",
-   "from": "Бляцкие коты",
-   "from_id": "channel1142011374",
-   "file": "video_files/IMG_4918.MP4",
-   "file_name": "IMG_4918.MP4",
-   "thumbnail": "video_files/IMG_4918.MP4_thumb.jpg",
-   "media_type": "animation",
-   "mime_type": "video/mp4",
-   "duration_seconds": 8,
-   "width": 640,
-   "height": 832,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 44527,
-   "type": "message",
-   "date": "2024-05-01T13:59:46",
-   "date_unixtime": "1714557586",
-   "edited": "2024-05-01T13:59:51",
-   "edited_unixtime": "1714557591",
-   "from": "Бляцкие коты",
-   "from_id": "channel1142011374",
-   "file": "video_files/IMG_4923.MP4",
-   "file_name": "IMG_4923.MP4",
-   "thumbnail": "video_files/IMG_4923.MP4_thumb.jpg",
-   "media_type": "animation",
-   "mime_type": "video/mp4",
-   "duration_seconds": 6,
-   "width": 672,
-   "height": 828,
-   "text": "Пылинка",
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Пылинка"
-    }
-   ]
-  },
-  {
-   "id": 44528,
-   "type": "message",
-   "date": "2024-05-01T15:32:13",
-   "date_unixtime": "1714563133",
-   "edited": "2024-05-01T15:32:16",
-   "edited_unixtime": "1714563136",
-   "from": "Бляцкие коты",
-   "from_id": "channel1142011374",
-   "file": "video_files/IMG_4925.MP4",
-   "file_name": "IMG_4925.MP4",
-   "thumbnail": "video_files/IMG_4925.MP4_thumb.jpg",
-   "media_type": "animation",
-   "mime_type": "video/mp4",
-   "duration_seconds": 17,
-   "width": 624,
-   "height": 834,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 44529,
-   "type": "message",
-   "date": "2024-05-01T21:28:14",
-   "date_unixtime": "1714584494",
-   "edited": "2024-05-01T21:28:16",
-   "edited_unixtime": "1714584496",
-   "from": "Бляцкие коты",
-   "from_id": "channel1142011374",
-   "file": "video_files/IMG_4939.MP4",
-   "file_name": "IMG_4939.MP4",
-   "thumbnail": "video_files/IMG_4939.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 15,
-   "width": 624,
-   "height": 836,
-   "text": "Электрик",
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Электрик"
-    }
-   ]
-  },
-  {
-   "id": 44530,
-   "type": "message",
-   "date": "2024-05-02T01:11:11",
-   "date_unixtime": "1714597871",
-   "edited": "2024-05-02T01:11:12",
-   "edited_unixtime": "1714597872",
-   "from": "Бляцкие коты",
-   "from_id": "channel1142011374",
-   "file": "video_files/IMG_4944.MP4",
-   "file_name": "IMG_4944.MP4",
-   "thumbnail": "video_files/IMG_4944.MP4_thumb.jpg",
-   "media_type": "animation",
-   "mime_type": "video/mp4",
-   "duration_seconds": 6,
-   "width": 960,
-   "height": 1262,
-   "text": "Ну идем уже спотб, я же жду тибя в кроватке",
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Ну идем уже спотб, я же жду тибя в кроватке"
-    }
-   ]
-  },
-  {
-   "id": 44531,
-   "type": "message",
-   "date": "2024-05-02T12:51:08",
-   "date_unixtime": "1714639868",
-   "edited": "2024-05-02T12:51:09",
-   "edited_unixtime": "1714639869",
-   "from": "Бляцкие коты",
-   "from_id": "channel1142011374",
-   "file": "video_files/IMG_4967.MP4",
-   "file_name": "IMG_4967.MP4",
-   "thumbnail": "video_files/IMG_4967.MP4_thumb.jpg",
-   "media_type": "animation",
-   "mime_type": "video/mp4",
-   "duration_seconds": 8,
-   "width": 640,
-   "height": 836,
-   "text": "В тесной однушке зото не в кредит",
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "В тесной однушке зото не в кредит"
-    }
-   ]
-  },
-  {
-   "id": 44532,
-   "type": "message",
-   "date": "2024-05-02T19:39:09",
-   "date_unixtime": "1714664349",
-   "edited": "2024-05-02T19:39:12",
-   "edited_unixtime": "1714664352",
-   "from": "Бляцкие коты",
-   "from_id": "channel1142011374",
-   "file": "video_files/IMG_4973.MP4",
-   "file_name": "IMG_4973.MP4",
-   "thumbnail": "video_files/IMG_4973.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 35,
-   "width": 672,
-   "height": 848,
-   "text": "Дегустация показала, что вы сладкая булiчка :3",
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Дегустация показала, что вы сладкая булiчка :3"
-    }
-   ]
-  },
-  {
-   "id": 44533,
-   "type": "message",
-   "date": "2024-05-02T19:39:46",
-   "date_unixtime": "1714664386",
-   "edited": "2024-05-02T19:39:47",
-   "edited_unixtime": "1714664387",
-   "from": "Бляцкие коты",
-   "from_id": "channel1142011374",
-   "file": "video_files/IMG_4973 (1).MP4",
-   "file_name": "IMG_4973.MP4",
-   "thumbnail": "video_files/IMG_4973 (1).MP4_thumb.jpg",
-   "media_type": "animation",
-   "mime_type": "video/mp4",
-   "duration_seconds": 32,
-   "width": 672,
-   "height": 840,
-   "text": "Дегустация показала, что вы сладкая булiчка :3",
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Дегустация показала, что вы сладкая булiчка :3"
-    }
-   ]
-  },
-  {
-   "id": 44534,
-   "type": "message",
-   "date": "2024-05-02T23:21:47",
-   "date_unixtime": "1714677707",
-   "edited": "2024-05-02T23:21:53",
-   "edited_unixtime": "1714677713",
-   "from": "Бляцкие коты",
-   "from_id": "channel1142011374",
-   "file": "video_files/IMG_4979.MP4",
-   "file_name": "IMG_4979.MP4",
-   "thumbnail": "video_files/IMG_4979.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 9,
-   "width": 992,
-   "height": 1274,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 5599,
-   "type": "message",
-   "date": "2024-05-01T10:35:01",
-   "date_unixtime": "1714545301",
-   "edited": "2024-05-01T10:35:11",
-   "edited_unixtime": "1714545311",
-   "from": "ЗооМир",
-   "from_id": "channel1400984977",
-   "file": "video_files/IMG_9299.MP4",
-   "thumbnail": "video_files/IMG_9299.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 14,
-   "width": 352,
-   "height": 640,
-   "text": [
-    "Я и спорт😅\n\n",
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Я и спорт😅\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 5601,
-   "type": "message",
-   "date": "2024-05-01T13:11:07",
-   "date_unixtime": "1714554667",
-   "edited": "2024-05-01T13:11:17",
-   "edited_unixtime": "1714554677",
-   "from": "ЗооМир",
-   "from_id": "channel1400984977",
-   "file": "video_files/IMG_9301.MP4",
-   "thumbnail": "video_files/IMG_9301.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 7,
-   "width": 336,
-   "height": 640,
-   "text": [
-    "Захотел к маме на ручки🥰\n\n",
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Захотел к маме на ручки🥰\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 5602,
-   "type": "message",
-   "date": "2024-05-01T16:11:06",
-   "date_unixtime": "1714565466",
-   "edited": "2024-05-01T16:11:14",
-   "edited_unixtime": "1714565474",
-   "from": "ЗооМир",
-   "from_id": "channel1400984977",
-   "file": "video_files/IMG_9303.MP4",
-   "thumbnail": "video_files/IMG_9303.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 8,
-   "width": 512,
-   "height": 640,
-   "text": [
-    "Пойдем играть🤪\n\n",
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Пойдем играть🤪\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 5603,
-   "type": "message",
-   "date": "2024-05-01T19:19:04",
-   "date_unixtime": "1714576744",
-   "edited": "2024-05-01T19:19:09",
-   "edited_unixtime": "1714576749",
-   "from": "ЗооМир",
-   "from_id": "channel1400984977",
-   "file": "video_files/IMG_9304.MP4",
-   "thumbnail": "video_files/IMG_9304.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 16,
-   "width": 352,
-   "height": 640,
-   "text": [
-    "Хитрюга😅\n\n",
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Хитрюга😅\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 5605,
-   "type": "message",
-   "date": "2024-05-01T23:05:04",
-   "date_unixtime": "1714590304",
-   "edited": "2024-05-01T23:05:12",
-   "edited_unixtime": "1714590312",
-   "from": "ЗооМир",
-   "from_id": "channel1400984977",
-   "file": "video_files/IMG_9305.MP4",
-   "thumbnail": "video_files/IMG_9305.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 40,
-   "width": 352,
-   "height": 640,
-   "text": [
-    "Нервы успокаивает😼\n\n",
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Нервы успокаивает😼\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 5606,
-   "type": "message",
-   "date": "2024-05-02T10:35:10",
-   "date_unixtime": "1714631710",
-   "edited": "2024-05-02T10:35:19",
-   "edited_unixtime": "1714631719",
-   "from": "ЗооМир",
-   "from_id": "channel1400984977",
-   "file": "video_files/IMG_9362.MP4",
-   "thumbnail": "video_files/IMG_9362.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 14,
-   "width": 352,
-   "height": 480,
-   "text": [
-    "Милашки😍\n\n",
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Милашки😍\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 5607,
-   "type": "message",
-   "date": "2024-05-02T13:11:04",
-   "date_unixtime": "1714641064",
-   "edited": "2024-05-02T13:11:38",
-   "edited_unixtime": "1714641098",
-   "from": "ЗооМир",
-   "from_id": "channel1400984977",
-   "file": "video_files/IMG_9364.MP4",
-   "thumbnail": "video_files/IMG_9364.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 11,
-   "width": 352,
-   "height": 624,
-   "text": [
-    "Игрушка зачет🤣\n\n",
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Игрушка зачет🤣\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 5608,
-   "type": "message",
-   "date": "2024-05-02T16:11:07",
-   "date_unixtime": "1714651867",
-   "edited": "2024-05-02T16:11:45",
-   "edited_unixtime": "1714651905",
-   "from": "ЗооМир",
-   "from_id": "channel1400984977",
-   "file": "video_files/IMG_9375.MP4",
-   "thumbnail": "video_files/IMG_9375.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 26,
-   "width": 352,
-   "height": 640,
-   "text": [
-    "Не забываете про друзей😍\n\n",
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Не забываете про друзей😍\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 5609,
-   "type": "message",
-   "date": "2024-05-02T19:19:04",
-   "date_unixtime": "1714663144",
-   "edited": "2024-05-02T19:19:22",
-   "edited_unixtime": "1714663162",
-   "from": "ЗооМир",
-   "from_id": "channel1400984977",
-   "file": "video_files/IMG_9377.MP4",
-   "thumbnail": "video_files/IMG_9377.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 9,
-   "width": 352,
-   "height": 640,
-   "text": [
-    "Ну что за прелесть🥰\n\n",
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Ну что за прелесть🥰\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 5610,
-   "type": "message",
-   "date": "2024-05-02T22:15:13",
-   "date_unixtime": "1714673713",
-   "edited": "2024-05-02T22:15:32",
-   "edited_unixtime": "1714673732",
-   "from": "ЗооМир",
-   "from_id": "channel1400984977",
-   "file": "video_files/IMG_9379.MP4",
-   "thumbnail": "video_files/IMG_9379.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 6,
-   "width": 336,
-   "height": 640,
-   "text": [
-    "Любитель поиграть😊\n\n",
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Любитель поиграть😊\n\n"
-    },
-    {
-     "type": "text_link",
-     "text": "ЗооМир",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "text_link",
-     "text": "🐼",
-     "href": "https://t.me/+EdTVCcf9RTVkZjZi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26751,
-   "type": "message",
-   "date": "2024-05-01T09:02:06",
-   "date_unixtime": "1714539726",
-   "edited": "2024-05-01T09:02:14",
-   "edited_unixtime": "1714539734",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "file": "video_files/IMG_5295.MP4",
-   "file_name": "IMG_5295.MP4",
-   "thumbnail": "video_files/IMG_5295.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 10,
-   "width": 720,
-   "height": 1280,
-   "text": [
-    "В любой непонятной ситуации ляг, успокойся, возьми себя в лапки. Береги нервишки. Ты у себя один такой, пончик румяный☺️\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "В любой непонятной ситуации ляг, успокойся, возьми себя в лапки. Береги нервишки. Ты у себя один такой, пончик румяный☺️\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26753,
-   "type": "message",
-   "date": "2024-05-01T12:12:47",
-   "date_unixtime": "1714551167",
-   "edited": "2024-05-01T12:12:50",
-   "edited_unixtime": "1714551170",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "photo": "photos/photo_3943@01-05-2024_12-12-47.jpg",
-   "width": 874,
-   "height": 1080,
-   "text": [
-    "Превращение кота в одуванчик🥰\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Превращение кота в одуванчик🥰\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26754,
-   "type": "message",
-   "date": "2024-05-01T12:12:47",
-   "date_unixtime": "1714551167",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "photo": "photos/photo_3944@01-05-2024_12-12-47.jpg",
-   "width": 877,
-   "height": 1080,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 26755,
-   "type": "message",
-   "date": "2024-05-01T12:12:47",
-   "date_unixtime": "1714551167",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "photo": "photos/photo_3945@01-05-2024_12-12-47.jpg",
-   "width": 875,
-   "height": 1080,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 26756,
-   "type": "message",
-   "date": "2024-05-01T12:12:47",
-   "date_unixtime": "1714551167",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "photo": "photos/photo_3946@01-05-2024_12-12-47.jpg",
-   "width": 541,
-   "height": 669,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 26757,
-   "type": "message",
-   "date": "2024-05-01T12:12:47",
-   "date_unixtime": "1714551167",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "photo": "photos/photo_3947@01-05-2024_12-12-47.jpg",
-   "width": 608,
-   "height": 750,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 26758,
-   "type": "message",
-   "date": "2024-05-01T13:30:25",
-   "date_unixtime": "1714555825",
-   "edited": "2024-05-01T13:30:29",
-   "edited_unixtime": "1714555829",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "file": "video_files/IMG_4873.MP4",
-   "file_name": "IMG_4873.MP4",
-   "thumbnail": "video_files/IMG_4873.MP4_thumb.jpg",
-   "media_type": "animation",
-   "mime_type": "video/mp4",
-   "duration_seconds": 10,
-   "width": 656,
-   "height": 830,
-   "text": [
-    "Суп котов🍜\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Суп котов🍜\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26759,
-   "type": "message",
-   "date": "2024-05-01T15:02:06",
-   "date_unixtime": "1714561326",
-   "edited": "2024-05-01T15:02:10",
-   "edited_unixtime": "1714561330",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "file": "video_files/котизм89257.mp4",
-   "file_name": "котизм89257.mp4",
-   "thumbnail": "video_files/котизм89257.mp4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 11,
-   "width": 576,
-   "height": 1024,
-   "text": [
-    "Это мы натрескались шашлындосов и лежим батонимся🫠\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Это мы натрескались шашлындосов и лежим батонимся🫠\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26761,
-   "type": "message",
-   "date": "2024-05-01T18:13:42",
-   "date_unixtime": "1714572822",
-   "edited": "2024-05-01T18:15:22",
-   "edited_unixtime": "1714572922",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "file": "video_files/video_2024-05-01_10-56-44.mp4",
-   "file_name": "video_2024-05-01_10-56-44.mp4",
-   "thumbnail": "video_files/video_2024-05-01_10-56-44.mp4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 13,
-   "width": 576,
-   "height": 1024,
-   "text": [
-    "Лучшая версия лунной походки😎\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Лучшая версия лунной походки😎\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26762,
-   "type": "message",
-   "date": "2024-05-01T19:29:06",
-   "date_unixtime": "1714577346",
-   "edited": "2024-05-01T19:40:52",
-   "edited_unixtime": "1714578052",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "file": "video_files/IMG_1909.MP4",
-   "file_name": "IMG_1909.MP4",
-   "thumbnail": "video_files/IMG_1909.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 14,
-   "width": 720,
-   "height": 1280,
-   "text": [
-    "Дизайн этих тапочек практически готов, кожаный🐾\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Дизайн этих тапочек практически готов, кожаный🐾\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26763,
-   "type": "message",
-   "date": "2024-05-01T21:01:20",
-   "date_unixtime": "1714582880",
-   "edited": "2024-05-01T21:01:26",
-   "edited_unixtime": "1714582886",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "file": "video_files/IMG_5293.MP4",
-   "file_name": "IMG_5293.MP4",
-   "thumbnail": "video_files/IMG_5293.MP4_thumb.jpg",
-   "media_type": "animation",
-   "mime_type": "video/mp4",
-   "duration_seconds": 20,
-   "width": 688,
-   "height": 1258,
-   "text": [
-    "Пивконтроль🍻\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Пивконтроль🍻\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26766,
-   "type": "message",
-   "date": "2024-05-01T23:38:37",
-   "date_unixtime": "1714592317",
-   "edited": "2024-05-01T23:38:42",
-   "edited_unixtime": "1714592322",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "file": "video_files/IMG_1910.MP4",
-   "file_name": "IMG_1910.MP4",
-   "thumbnail": "video_files/IMG_1910.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 3,
-   "width": 720,
-   "height": 1280,
-   "text": [
-    "Найден самый милый флипбук😍\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Найден самый милый флипбук😍\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26767,
-   "type": "message",
-   "date": "2024-05-02T09:00:55",
-   "date_unixtime": "1714626055",
-   "edited": "2024-05-02T09:01:02",
-   "edited_unixtime": "1714626062",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "file": "video_files/IMG_5294.MP4",
-   "file_name": "IMG_5294.MP4",
-   "thumbnail": "video_files/IMG_5294.MP4_thumb.jpg",
-   "media_type": "animation",
-   "mime_type": "video/mp4",
-   "duration_seconds": 4,
-   "width": 976,
-   "height": 1268,
-   "text": [
-    "Моем окна. Дорого👅\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Моем окна. Дорого👅\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26769,
-   "type": "message",
-   "date": "2024-05-02T12:04:23",
-   "date_unixtime": "1714637063",
-   "edited": "2024-05-02T12:04:30",
-   "edited_unixtime": "1714637070",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "file": "video_files/IMG_1920.MOV",
-   "file_name": "IMG_1920.MOV",
-   "thumbnail": "video_files/IMG_1920.MOV_thumb.jpg",
-   "media_type": "animation",
-   "mime_type": "video/mp4",
-   "duration_seconds": 11,
-   "width": 1280,
-   "height": 1280,
-   "text": [
-    "Сегодня отмечается Международный день ничегонеделания😴\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Сегодня отмечается Международный день ничегонеделания😴\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26770,
-   "type": "message",
-   "date": "2024-05-02T13:27:34",
-   "date_unixtime": "1714642054",
-   "edited": "2024-05-02T13:27:38",
-   "edited_unixtime": "1714642058",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "photo": "photos/photo_3948@02-05-2024_13-27-34.jpg",
-   "width": 474,
-   "height": 619,
-   "text": [
-    "Когдa пришли гоcти и ты выноcишь кота, чтобы пoказать, какой у тебя кот🥰\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Когдa пришли гоcти и ты выноcишь кота, чтобы пoказать, какой у тебя кот🥰\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26771,
-   "type": "message",
-   "date": "2024-05-02T15:01:07",
-   "date_unixtime": "1714647667",
-   "edited": "2024-05-02T15:01:13",
-   "edited_unixtime": "1714647673",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "file": "video_files/IMG_4910.MP4",
-   "file_name": "IMG_4910.MP4",
-   "thumbnail": "video_files/IMG_4910.MP4_thumb.jpg",
-   "media_type": "animation",
-   "mime_type": "video/mp4",
-   "duration_seconds": 4,
-   "width": 960,
-   "height": 1262,
-   "text": [
-    "Бесят блин, постоянно пунькают в носек, а я не просил мне пунькать, не одобрял пуньканье😡\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Бесят блин, постоянно пунькают в носек, а я не просил мне пунькать, не одобрял пуньканье😡\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26781,
-   "type": "message",
-   "date": "2024-05-02T18:38:11",
-   "date_unixtime": "1714660691",
-   "edited": "2024-05-02T18:38:18",
-   "edited_unixtime": "1714660698",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "file": "video_files/IMG_4923.MP4",
-   "file_name": "IMG_4923.MP4",
-   "thumbnail": "video_files/IMG_4923.MP4_thumb.jpg",
-   "media_type": "animation",
-   "mime_type": "video/mp4",
-   "duration_seconds": 6,
-   "width": 672,
-   "height": 828,
-   "text": [
-    "Пылинка попалась🥺\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Пылинка попалась🥺\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26782,
-   "type": "message",
-   "date": "2024-05-02T19:48:47",
-   "date_unixtime": "1714664927",
-   "edited": "2024-05-02T23:17:44",
-   "edited_unixtime": "1714677464",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "file": "video_files/@lepragram.mp4",
-   "file_name": "@lepragram.mp4",
-   "thumbnail": "video_files/@lepragram.mp4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 31,
-   "width": 720,
-   "height": 1280,
-   "text": [
-    "Ну ооочень хочется поесть из чужой миски👀\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Ну ооочень хочется поесть из чужой миски👀\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26783,
-   "type": "message",
-   "date": "2024-05-02T21:05:42",
-   "date_unixtime": "1714669542",
-   "edited": "2024-05-02T21:05:46",
-   "edited_unixtime": "1714669546",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "file": "video_files/IMG_5309.MP4",
-   "file_name": "IMG_5309.MP4",
-   "thumbnail": "video_files/IMG_5309.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 8,
-   "width": 832,
-   "height": 1268,
-   "text": [
-    "Каждый раз, когда я пытаюсь потрогать своего кота🙂\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Каждый раз, когда я пытаюсь потрогать своего кота🙂\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 26785,
-   "type": "message",
-   "date": "2024-05-02T23:13:01",
-   "date_unixtime": "1714677181",
-   "edited": "2024-05-02T23:13:12",
-   "edited_unixtime": "1714677192",
-   "from": "шерстяные проказники • коты",
-   "from_id": "channel1283644155",
-   "file": "video_files/@lepragram (1).mp4",
-   "file_name": "@lepragram.mp4",
-   "thumbnail": "video_files/@lepragram (1).mp4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 20,
-   "width": 720,
-   "height": 1280,
-   "text": [
-    "Ооо кукурузовое🤤\n\n",
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    " ",
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Ооо кукурузовое🤤\n\n"
-    },
-    {
-     "type": "custom_emoji",
-     "text": "♥️",
-     "document_id": "stickers/sticker.webp"
-    },
-    {
-     "type": "plain",
-     "text": " "
-    },
-    {
-     "type": "text_link",
-     "text": "Шерстяные проказники",
-     "href": "https://t.me/+YyZAC53UIwk4MTFi"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 2967,
-   "type": "message",
-   "date": "2024-05-01T12:04:00",
-   "date_unixtime": "1714550640",
-   "edited": "2024-05-01T12:04:22",
-   "edited_unixtime": "1714550662",
-   "from": "ёжики 🦔",
-   "from_id": "channel1689082606",
-   "photo": "photos/photo_559@01-05-2024_12-04-00.jpg",
-   "width": 236,
-   "height": 236,
-   "text": [
-    {
-     "type": "text_link",
-     "text": "ёжики",
-     "href": "https://t.me/hedgehogiki"
-    },
-    " 🦔"
-   ],
-   "text_entities": [
-    {
-     "type": "text_link",
-     "text": "ёжики",
-     "href": "https://t.me/hedgehogiki"
-    },
-    {
-     "type": "plain",
-     "text": " 🦔"
-    }
-   ]
-  },
-  {
-   "id": 2968,
-   "type": "message",
-   "date": "2024-05-01T16:04:22",
-   "date_unixtime": "1714565062",
-   "edited": "2024-05-01T16:04:35",
-   "edited_unixtime": "1714565075",
-   "from": "ёжики 🦔",
-   "from_id": "channel1689082606",
-   "photo": "photos/photo_560@01-05-2024_16-04-22.jpg",
-   "width": 736,
-   "height": 1156,
-   "text": [
-    {
-     "type": "text_link",
-     "text": "ёжики",
-     "href": "https://t.me/hedgehogiki"
-    },
-    " 🦔"
-   ],
-   "text_entities": [
-    {
-     "type": "text_link",
-     "text": "ёжики",
-     "href": "https://t.me/hedgehogiki"
-    },
-    {
-     "type": "plain",
-     "text": " 🦔"
-    }
-   ]
-  },
-  {
-   "id": 2970,
-   "type": "message",
-   "date": "2024-05-01T20:05:02",
-   "date_unixtime": "1714579502",
-   "edited": "2024-05-01T20:05:11",
-   "edited_unixtime": "1714579511",
-   "from": "ёжики 🦔",
-   "from_id": "channel1689082606",
-   "photo": "photos/photo_561@01-05-2024_20-05-02.jpg",
-   "width": 720,
-   "height": 1280,
-   "text": [
-    {
-     "type": "text_link",
-     "text": "ёжики",
-     "href": "https://t.me/hedgehogiki"
-    },
-    " 🦔"
-   ],
-   "text_entities": [
-    {
-     "type": "text_link",
-     "text": "ёжики",
-     "href": "https://t.me/hedgehogiki"
-    },
-    {
-     "type": "plain",
-     "text": " 🦔"
-    }
-   ]
-  },
-  {
-   "id": 2972,
-   "type": "message",
-   "date": "2024-05-02T12:04:03",
-   "date_unixtime": "1714637043",
-   "edited": "2024-05-02T12:04:13",
-   "edited_unixtime": "1714637053",
-   "from": "ёжики 🦔",
-   "from_id": "channel1689082606",
-   "photo": "photos/photo_562@02-05-2024_12-04-03.jpg",
-   "width": 736,
-   "height": 724,
-   "text": [
-    {
-     "type": "text_link",
-     "text": "ёжики",
-     "href": "https://t.me/hedgehogiki"
-    },
-    " 🦔"
-   ],
-   "text_entities": [
-    {
-     "type": "text_link",
-     "text": "ёжики",
-     "href": "https://t.me/hedgehogiki"
-    },
-    {
-     "type": "plain",
-     "text": " 🦔"
-    }
-   ]
-  },
-  {
-   "id": 2973,
-   "type": "message",
-   "date": "2024-05-02T16:03:44",
-   "date_unixtime": "1714651424",
-   "edited": "2024-05-02T16:03:49",
-   "edited_unixtime": "1714651429",
-   "from": "ёжики 🦔",
-   "from_id": "channel1689082606",
-   "photo": "photos/photo_563@02-05-2024_16-03-44.jpg",
-   "width": 735,
-   "height": 772,
-   "text": [
-    {
-     "type": "text_link",
-     "text": "ёжики",
-     "href": "https://t.me/hedgehogiki"
-    },
-    " 🦔"
-   ],
-   "text_entities": [
-    {
-     "type": "text_link",
-     "text": "ёжики",
-     "href": "https://t.me/hedgehogiki"
-    },
-    {
-     "type": "plain",
-     "text": " 🦔"
-    }
-   ]
-  },
-  {
-   "id": 2975,
-   "type": "message",
-   "date": "2024-05-02T20:04:03",
-   "date_unixtime": "1714665843",
-   "edited": "2024-05-02T20:04:16",
-   "edited_unixtime": "1714665856",
-   "from": "ёжики 🦔",
-   "from_id": "channel1689082606",
-   "photo": "photos/photo_564@02-05-2024_20-04-03.jpg",
-   "width": 583,
-   "height": 470,
-   "text": [
-    {
-     "type": "text_link",
-     "text": "ёжики",
-     "href": "https://t.me/hedgehogiki"
-    },
-    " 🦔"
-   ],
-   "text_entities": [
-    {
-     "type": "text_link",
-     "text": "ёжики",
-     "href": "https://t.me/hedgehogiki"
-    },
-    {
-     "type": "plain",
-     "text": " 🦔"
-    }
-   ]
-  },
-  {
-   "id": 16975,
-   "type": "message",
-   "date": "2024-05-01T22:35:47",
-   "date_unixtime": "1714588547",
-   "edited": "2024-05-01T22:36:17",
-   "edited_unixtime": "1714588577",
-   "from": "всратые животные",
-   "from_id": "channel1146263928",
-   "file": "video_files/IMG_0520.MP4",
-   "file_name": "IMG_0520.MP4",
-   "thumbnail": "video_files/IMG_0520.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 5,
-   "width": 880,
-   "height": 1280,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 16976,
-   "type": "message",
-   "date": "2024-05-02T00:01:01",
-   "date_unixtime": "1714593661",
-   "edited": "2024-05-02T00:02:41",
-   "edited_unixtime": "1714593761",
-   "from": "всратые животные",
-   "from_id": "channel1146263928",
-   "photo": "photos/photo_10579@02-05-2024_00-01-01.jpg",
-   "width": 1017,
-   "height": 1017,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 16977,
-   "type": "message",
-   "date": "2024-05-02T10:23:20",
-   "date_unixtime": "1714631000",
-   "edited": "2024-05-02T10:26:08",
-   "edited_unixtime": "1714631168",
-   "from": "всратые животные",
-   "from_id": "channel1146263928",
-   "photo": "photos/photo_10580@02-05-2024_10-23-20.jpg",
-   "width": 900,
-   "height": 799,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 16978,
-   "type": "message",
-   "date": "2024-05-02T17:08:21",
-   "date_unixtime": "1714655301",
-   "edited": "2024-05-02T17:09:08",
-   "edited_unixtime": "1714655348",
-   "from": "всратые животные",
-   "from_id": "channel1146263928",
-   "file": "video_files/IMG_0561.MP4",
-   "file_name": "IMG_0561.MP4",
-   "thumbnail": "video_files/IMG_0561.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 7,
-   "width": 720,
-   "height": 1280,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 16979,
-   "type": "message",
-   "date": "2024-05-02T23:50:55",
-   "date_unixtime": "1714679455",
-   "edited": "2024-05-02T23:55:33",
-   "edited_unixtime": "1714679733",
-   "from": "всратые животные",
-   "from_id": "channel1146263928",
-   "file": "video_files/IMG_0595.MP4",
-   "file_name": "IMG_0595.MP4",
-   "thumbnail": "video_files/IMG_0595.MP4_thumb.jpg",
-   "media_type": "animation",
-   "mime_type": "video/mp4",
-   "duration_seconds": 9,
-   "width": 864,
-   "height": 1280,
-   "text": "",
-   "text_entities": []
-  },
-  {
-   "id": 10002,
-   "type": "message",
-   "date": "2024-05-01T10:35:09",
-   "date_unixtime": "1714545309",
-   "edited": "2024-05-01T10:35:49",
-   "edited_unixtime": "1714545349",
-   "from": "🐶WorldOfPets🐱",
-   "from_id": "channel1080141747",
-   "file": "video_files/IMG_7705.MP4",
-   "file_name": "IMG_7705.MP4",
-   "thumbnail": "video_files/IMG_7705.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 9,
-   "width": 528,
-   "height": 336,
-   "text": "Домашние конфликты",
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Домашние конфликты"
-    }
-   ]
-  },
-  {
-   "id": 10003,
-   "type": "message",
-   "date": "2024-05-01T14:35:28",
-   "date_unixtime": "1714559728",
-   "edited": "2024-05-01T14:36:07",
-   "edited_unixtime": "1714559767",
-   "from": "🐶WorldOfPets🐱",
-   "from_id": "channel1080141747",
-   "file": "video_files/IMG_7464.MP4",
-   "file_name": "IMG_7464.MP4",
-   "thumbnail": "video_files/IMG_7464.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 8,
-   "width": 512,
-   "height": 640,
-   "text": "Зовёт поиграть",
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Зовёт поиграть"
-    }
-   ]
-  },
-  {
-   "id": 10004,
-   "type": "message",
-   "date": "2024-05-01T22:50:31",
-   "date_unixtime": "1714589431",
-   "edited": "2024-05-01T22:51:39",
-   "edited_unixtime": "1714589499",
-   "from": "🐶WorldOfPets🐱",
-   "from_id": "channel1080141747",
-   "file": "video_files/IMG_1349.MP4",
-   "file_name": "IMG_1349.MP4",
-   "thumbnail": "video_files/IMG_1349.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 22,
-   "width": 464,
-   "height": 848,
-   "text": "Птички",
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Птички"
-    }
-   ]
-  },
-  {
-   "id": 10005,
-   "type": "message",
-   "date": "2024-05-02T11:47:06",
-   "date_unixtime": "1714636026",
-   "edited": "2024-05-02T11:47:34",
-   "edited_unixtime": "1714636054",
-   "from": "🐶WorldOfPets🐱",
-   "from_id": "channel1080141747",
-   "file": "video_files/IMG_1345.MP4",
-   "file_name": "IMG_1345.MP4",
-   "thumbnail": "video_files/IMG_1345.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 13,
-   "width": 464,
-   "height": 848,
-   "text": "Счастливый",
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Счастливый"
-    }
-   ]
-  },
-  {
-   "id": 10006,
-   "type": "message",
-   "date": "2024-05-02T15:01:54",
-   "date_unixtime": "1714647714",
-   "edited": "2024-05-02T15:03:10",
-   "edited_unixtime": "1714647790",
-   "from": "🐶WorldOfPets🐱",
-   "from_id": "channel1080141747",
-   "file": "video_files/IMG_9928.MP4",
-   "file_name": "IMG_9928.MP4",
-   "thumbnail": "video_files/IMG_9928.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 14,
-   "width": 960,
-   "height": 1280,
-   "text": [
-    {
-     "type": "bold",
-     "text": "Вы только посмотрите на этот уютный канал про кошек и собак 🙀\n"
-    },
-    "\n",
-    {
-     "type": "text_link",
-     "text": "Probalance",
-     "href": "https://t.me/+oiZF1uLD7Ek3MTcy"
-    },
-    " — то самое место, где можно найти не только ",
-    {
-     "type": "bold",
-     "text": "забавные фото и видео"
-    },
-    " питомцев, но и ",
-    {
-     "type": "bold",
-     "text": "советы по воспитанию"
-    },
-    " четвероногих ",
-    {
-     "type": "custom_emoji",
-     "text": "🙂",
-     "document_id": "stickers/AnimatedSticker.tgs"
-    },
-    "\n\nМы вам ",
-    {
-     "type": "underline",
-     "text": "обещаем"
-    },
-    ", скучно тут точно не будет 👉🏻 ",
-    {
-     "type": "link",
-     "text": "t.me/probalance_ru"
-    },
-    ""
-   ],
-   "text_entities": [
-    {
-     "type": "bold",
-     "text": "Вы только посмотрите на этот уютный канал про кошек и собак 🙀\n"
-    },
-    {
-     "type": "plain",
-     "text": "\n"
-    },
-    {
-     "type": "text_link",
-     "text": "Probalance",
-     "href": "https://t.me/+oiZF1uLD7Ek3MTcy"
-    },
-    {
-     "type": "plain",
-     "text": " — то самое место, где можно найти не только "
-    },
-    {
-     "type": "bold",
-     "text": "забавные фото и видео"
-    },
-    {
-     "type": "plain",
-     "text": " питомцев, но и "
-    },
-    {
-     "type": "bold",
-     "text": "советы по воспитанию"
-    },
-    {
-     "type": "plain",
-     "text": " четвероногих "
-    },
-    {
-     "type": "custom_emoji",
-     "text": "🙂",
-     "document_id": "stickers/AnimatedSticker.tgs"
-    },
-    {
-     "type": "plain",
-     "text": "\n\nМы вам "
-    },
-    {
-     "type": "underline",
-     "text": "обещаем"
-    },
-    {
-     "type": "plain",
-     "text": ", скучно тут точно не будет 👉🏻 "
-    },
-    {
-     "type": "link",
-     "text": "t.me/probalance_ru"
-    },
-    {
-     "type": "plain",
-     "text": ""
-    }
-   ]
-  },
-  {
-   "id": 10007,
-   "type": "message",
-   "date": "2024-05-02T16:01:43",
-   "date_unixtime": "1714651303",
-   "edited": "2024-05-02T16:01:55",
-   "edited_unixtime": "1714651315",
-   "from": "🐶WorldOfPets🐱",
-   "from_id": "channel1080141747",
-   "file": "video_files/IMG_1341.MP4",
-   "file_name": "IMG_1341.MP4",
-   "thumbnail": "video_files/IMG_1341.MP4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 7,
-   "width": 720,
-   "height": 1280,
-   "text": "Когда на диете, но очень хочется фастфуд",
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "Когда на диете, но очень хочется фастфуд"
-    }
-   ]
-  },
-  {
-   "id": 10008,
-   "type": "message",
-   "date": "2024-05-02T22:50:14",
-   "date_unixtime": "1714675814",
-   "edited": "2024-05-02T22:50:35",
-   "edited_unixtime": "1714675835",
-   "from": "🐶WorldOfPets🐱",
-   "from_id": "channel1080141747",
-   "file": "video_files/oQP0gJDY4ImEFR67uSfBRJ9Iiulfv9EHAEDwGQ.mp4",
-   "file_name": "oQP0gJDY4ImEFR67uSfBRJ9Iiulfv9EHAEDwGQ.mp4",
-   "thumbnail": "video_files/oQP0gJDY4ImEFR67uSfBRJ9Iiulfv9EHAEDwGQ.mp4_thumb.jpg",
-   "media_type": "video_file",
-   "mime_type": "video/mp4",
-   "duration_seconds": 8,
-   "width": 576,
-   "height": 1024,
-   "text": "«Каждый раз, когда я пытаюсь потрогать своего кота»",
-   "text_entities": [
-    {
-     "type": "plain",
-     "text": "«Каждый раз, когда я пытаюсь потрогать своего кота»"
-    }
-   ]
-  }
- ]
+  ]
 }

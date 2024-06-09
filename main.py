@@ -19,7 +19,7 @@ from datetime import datetime, time, timedelta
 from db import Database
 from config import ADMIN_ID
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
 
 channel_id = -1002042076267
 
@@ -35,25 +35,24 @@ async def is_work_time(start_time: str, end_time: str):
     return any([now <= end, now >= start]) if not start < end else (start <= now <= end)
 
 
-async def waiting_to_wake_up(start_time, end_time):
+def waiting_to_wake_up(start_time, end_time):
     start = datetime.strptime(start_time, '%H:%M')
     end = datetime.strptime(end_time, '%H:%M')
     hours = datetime.strptime("00:00", "%H:%M")
-    result = datetime.strftime(hours - (end - start), '%H:%M')
+    result = datetime.strftime(hours - (start - end), '%H:%M')
     asd = timedelta(hours=int(result[0] + result[1]), minutes=int(result[3] + result[4]))
     return round(asd.total_seconds())
 
 
 async def send_message():
     # open json
-    with open("result.json", encoding="utf8") as result:
+    with open("result.json", "r", encoding="utf8") as result:
         posts_json = json.load(result)
 
     # create variables for work script
     a = 0
     date = {}
     posts_clear = {"messages": []}
-    delete = await db.get_delete()
     period = await db.get_period()
 
     wl = []
@@ -62,7 +61,7 @@ async def send_message():
         wl.append(lists[0])
 
     # removal of advertising
-    for post in posts_json["messages"]:
+    for post in posts_json['messages']:
         try:
             # inline button
             if "inline_bot_buttons" in post or post["text_entities"][0]["href"] not in wl:
@@ -103,7 +102,7 @@ async def send_message():
         json.dump(posts_clear, result)
 
     # MediaGroup mark
-    for post in posts_clear["messages"]:
+    for post in posts_clear['messages']:
         date[post["date_unixtime"]] = date.get(post["date_unixtime"], 0) + 1
 
     # bot goes on break
@@ -111,30 +110,38 @@ async def send_message():
     time_to_up = await db.get_up()
     if not await is_work_time(time_to_up[0], time_to_sleep[0]):
         for i in ADMIN_ID:
-            await bot.send_message(i, f"Бот спит 😴\nОн проснется в {time_to_up[0]} и начнет рассылку",
-                                   disable_notification=True)
-        await asyncio.sleep(await waiting_to_wake_up(time_to_up[0], time_to_sleep[0]))
+            await bot.send_message(i, f"Бот спит 😴\nОн проснется в {time_to_up[0]} и начнет рассылку", disable_notification=True)
+        time_now = pytz.timezone('Europe/Moscow').localize(datetime.now()).strftime('%H:%M')
+        await asyncio.sleep(waiting_to_wake_up(time_now, time_to_up[0]))
+
+    # open json
+    with open("result.json", "r", encoding="utf8") as result:
+        posts = json.load(result)
+
+    if len(posts['messages']) > 0:
+        start_newsletter = await db.get_start()
+
+        if start_newsletter[0] != '0':
+            for i in ADMIN_ID:
+                await bot.send_message(i, f"Установлено время начала рассылки. Она начнется в <b>{start_newsletter[0]}</b>",
+                                       disable_notification=True)
+            time_now = pytz.timezone('Europe/Moscow').localize(datetime.now()).strftime('%H:%M')
+            await asyncio.sleep(waiting_to_wake_up(time_now, start_newsletter[0]))
+            await db.set_start("0")
+
+        # mailing launch message
         for i in ADMIN_ID:
-            await bot.send_message(i, f"🔵 [INFO] Я проснулся\n Начинаю работу 🤓", disable_notification=True)
+            await bot.send_message(i, f"Рассылка запущена!\nВсего постов: <b>{len(posts['messages'])}</b> шт.\nПериод рассылки: <b>{period[0]}</b> сек. ({round(int(period[0]) / 60, 1)} мин.)\nБот просыпается в <b>{time_to_up[0]}</b>\nУходит спать в <b>{time_to_sleep[0]}</b>")
 
-    launch = await db.get_launched()
-    if launch[0] == 1:
-        if len(date) > 0:
-            # mailing launch message
-            if delete[0] == 1:
-                for i in ADMIN_ID:
-                    await bot.send_message(i,
-                                           f"Рассылка запущена!\nВсего постов: <b>{len(date)}</b> шт.\nПериод рассылки: <b>{period[0]}</b> сек. ({round(int(period[0]) / 60, 1)} мин.)\nУдаление постов: <b>включено</b>\nБот уходит спать в: <b>{time_to_sleep[0]}</b>\nПросыпается в: <b>{time_to_up[0]}</b>")
-            else:
-                for i in ADMIN_ID:
-                    await bot.send_message(i,
-                                           f"Рассылка запущена!\nВсего постов: <b>{len(date)}</b> шт.\nПериод рассылки: <b>{period[0]}</b> сек. ({round(int(period[0]) / 60, 1)} мин.)\nУдаление постов: <b>отключено</b>\nБот уходит спать в: <b>{time_to_sleep[0]}</b>\nПросыпается в: <b>{time_to_up[0]}</b>")
+        # Shuffle
+        random.shuffle(posts["messages"])
 
-            # Shuffle
-            random.shuffle(posts_clear["messages"])
-
-            # Send message
-            for post in posts_clear["messages"]:
+        # Send message
+        for post in posts['messages']:
+            launch = await db.get_launched()
+            if launch[0] == 1:
+                with open("result.json", "r", encoding="utf8") as result:
+                    f = json.load(result)
 
                 # GET PERIOD
                 try:
@@ -152,30 +159,31 @@ async def send_message():
                 if not await is_work_time(time_to_up[0], time_to_sleep[0]):
                     for i in ADMIN_ID:
                         await bot.send_message(i, f"🔵 [INFO] Я ушел спать😴\nБуду в {time_to_up[0]}", disable_notification=True)
-                    await asyncio.sleep(await waiting_to_wake_up(time_to_up[0], time_to_sleep[0]))
+                    time_now = pytz.timezone('Europe/Moscow').localize(datetime.now()).strftime('%H:%M')
+                    await asyncio.sleep(waiting_to_wake_up(time_now, time_to_up[0]))
                     for i in ADMIN_ID:
                         await bot.send_message(i, f"🔵 [INFO] Я проснулся\n Начинаю работу 🤓", disable_notification=True)
 
                 # Notifications about the number of remaining posts
-                if len(date) == 50:
+                if len(f['messages']) == 50:
                     for i in ADMIN_ID:
                         await bot.send_message(i, "🔵 [INFO] Осталось 50 постов")
-                elif len(date) == 40:
+                elif len(f['messages']) == 40:
                     for i in ADMIN_ID:
                         await bot.send_message(i, "🔵 [INFO] Осталось 40 постов")
-                elif len(date) == 30:
+                elif len(f['messages']) == 30:
                     for i in ADMIN_ID:
                         await bot.send_message(i, "🔵 [INFO] Осталось 30 постов")
-                elif len(date) == 20:
+                elif len(f['messages']) == 20:
                     for i in ADMIN_ID:
                         await bot.send_message(i, "🔵 [INFO] Осталось 20 постов")
-                elif len(date) == 10:
+                elif len(f['messages']) == 10:
                     for i in ADMIN_ID:
                         await bot.send_message(i, "🔵 [INFO] Осталось 10 постов")
-                elif len(date) == 5:
+                elif len(f['messages']) == 5:
                     for i in ADMIN_ID:
                         await bot.send_message(i, "🔵 [INFO] Осталось 5 постов")
-                elif len(date) < 5:
+                elif len(f['messages']) < 5:
                     for i in ADMIN_ID:
                         await bot.send_message(i, "🔵 [INFO] Осталось меньше 5 постов!!!")
 
@@ -200,7 +208,14 @@ async def send_message():
                         path = post["photo"]
                         try:
                             if isinstance(post["text"], list):
-                                caption = post["text"][0]
+                                try:
+                                    types = post["text"][0]["type"]
+                                    if types == "text_link":
+                                        caption = ""
+                                    else:
+                                        caption = ""
+                                except:
+                                    caption = post["text"][0]
                             else:
                                 caption = post["text"]
                             try:
@@ -211,15 +226,11 @@ async def send_message():
                                     await bot.send_message(i, f"🟡 [WARNING] Фото не отправлено\nID: {post['id']}")
                             try:
                                 del date[post["date_unixtime"]]
-
-                                if delete[0] == 1:
-                                    os.remove(path)
                             except:
                                 logging.warning(f"PHOTO NOT FOUND\n")
                                 for i in ADMIN_ID:
                                     await bot.send_message(i, f"🟡 [WARNING] Фото не отправлено\nID: {post['id']}")
                             await asyncio.sleep(period[0])
-
                         except:
                             try:
                                 await bot.send_photo(channel_id, FSInputFile(path))
@@ -229,8 +240,6 @@ async def send_message():
                                     await bot.send_message(i, f"🟡 [WARNING] Фото не отправлено\nID: {post['id']}")
                             try:
                                 del date[post["date_unixtime"]]
-                                if delete[0] == 1:
-                                    os.remove(path)
                             except:
                                 logging.warning(f"PHOTO NOT FOUND\n")
                                 for i in ADMIN_ID:
@@ -241,7 +250,14 @@ async def send_message():
                         path = post["file"]
                         try:
                             if isinstance(post["text"], list):
-                                caption = post["text"][0]
+                                try:
+                                    types = post["text"][0]["type"]
+                                    if types == "text_link":
+                                        caption = ""
+                                    else:
+                                        caption = ""
+                                except:
+                                    caption = post["text"][0]
                             else:
                                 caption = post["text"]
                             try:
@@ -253,9 +269,6 @@ async def send_message():
                                     await bot.send_message(i, f"🟡 [WARNING] Видео не отправлено\nID: {post['id']}\n")
                             try:
                                 del date[post["date_unixtime"]]
-                                if delete[0] == 1:
-                                    os.remove(post["thumbnail"])
-                                    os.remove(path)
                             except:
                                 logging.warning(f"VIDEO NOT FOUND\n")
                                 for i in ADMIN_ID:
@@ -273,15 +286,11 @@ async def send_message():
                                     await bot.send_message(i, f"🟡 [WARNING] Видео не отправлено\nID: {post['id']}\n")
                             try:
                                 del date[post["date_unixtime"]]
-                                if delete[0] == 1:
-                                    os.remove(post["thumbnail"])
-                                    os.remove(path)
                             except:
                                 logging.warning(f"VIDEO NOT FOUND\n")
                                 for i in ADMIN_ID:
-                                    await bot.send_message(i)
+                                    await bot.send_message(i, f"🟡 [WARNING] Видео не отправлено\nID: {post['id']}\n")
                             await asyncio.sleep(period[0])
-
                     elif post_type == "text":
                         text = post["text"][0]
                         try:
@@ -298,7 +307,14 @@ async def send_message():
 
                     if a == 0:
                         try:
-                            caption = post["text"][0]
+                            try:
+                                types = post["text"][0]["type"]
+                                if types == "text_link":
+                                    caption = ""
+                                else:
+                                    caption = ""
+                            except:
+                                caption = post["text"][0]
                             mg = MediaGroupBuilder(caption=caption)
                         except:
                             mg = MediaGroupBuilder()
@@ -308,7 +324,14 @@ async def send_message():
                         path = post["photo"]
                         try:
                             if isinstance(post["text"], list):
-                                caption = post["text"][0]
+                                try:
+                                    types = post["text"][0]["type"]
+                                    if types == "text_link":
+                                        caption = ""
+                                    else:
+                                        caption = ""
+                                except:
+                                    caption = post["text"][0]
                             else:
                                 caption = post["text"]
                             mg.add(type="photo", media=FSInputFile(path), width=post["width"], height=post["height"],
@@ -318,7 +341,17 @@ async def send_message():
                     elif post_type == "video":
                         path = post["file"]
                         try:
-                            caption = post["text"][0]
+                            if isinstance(post["text"], list):
+                                try:
+                                    types = post["text"][0]["type"]
+                                    if types == "text_link":
+                                        caption = ""
+                                    else:
+                                        caption = ""
+                                except:
+                                    caption = post["text"][0]
+                            else:
+                                caption = post["text"]
                             mg.add(type="video", media=FSInputFile(path), width=post["width"], height=post["height"],
                                    caption=caption, thumbnail=FSInputFile(post["thumbnail"]))
                         except:
@@ -339,26 +372,26 @@ async def send_message():
                         a = 0
                         await asyncio.sleep(period[0])
 
-                index = posts_clear["messages"].index(post)
-                del posts_clear["messages"][index]
-
-                # write clear list in json file
+                # del post from json
+                index = f["messages"].index(post)
+                del f["messages"][index]
                 with open("result.json", "w") as result:
-                    json.dump(posts_clear, result)
+                    json.dump(f, result, indent=2)
+            else:
+                break
 
-                # open json
-                with open("result.json", encoding="utf8") as result:
-                    posts_clear = json.load(result)
+        # newsletter that posts are over
+        with open("result.json", "r", encoding="utf8") as result:
+            check = json.load(result)
 
-            # newsletter that posts are over
-            launch = await db.get_launched()
-            if launch[0] == 1:
-                for i in ADMIN_ID:
-                    await bot.send_message(i, "🔴 [WARNING] ПОСТЫ ЗАКОНЧИЛИСЬ ❗️")
-                await db.set_launched(0)
-        else:
+        if len(check["messages"]) == 0:
             for i in ADMIN_ID:
                 await bot.send_message(i, "🔴 [WARNING] ПОСТЫ ЗАКОНЧИЛИСЬ ❗️")
+            await db.set_launched(0)
+    else:
+        for i in ADMIN_ID:
+            await bot.send_message(i, "🔴 [WARNING] ПОСТЫ ЗАКОНЧИЛИСЬ ❗️")
+            await db.set_launched(0)
 
 
 async def main():

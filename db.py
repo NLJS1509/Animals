@@ -24,14 +24,6 @@ class Database:
         with self.connection:
             self.cursor.execute("UPDATE data SET launched = ?", (launched,))
 
-    async def get_delete(self):
-        with self.connection:
-            return self.cursor.execute("SELECT del FROM data", ).fetchall()[0]
-
-    async def set_delete(self, delete):
-        with self.connection:
-            self.cursor.execute("UPDATE data SET del = ?", (delete,))
-
     async def get_sleep(self):
         with self.connection:
             return self.cursor.execute("SELECT time_to_sleep FROM data", ).fetchall()[0]
@@ -62,8 +54,8 @@ class Database:
 
     async def get_start(self):
         with self.connection:
-            return self.cursor.execute("SELECT time_to_start FROM data", ).fetchall()
+            return self.cursor.execute("SELECT time_to_start FROM data", ).fetchall()[0]
 
     async def set_start(self, start):
         with self.connection:
-            self.cursor.execute("INSERT INTO 'data' ('time_to_start') VALUES (?)", (start,))
+            self.cursor.execute("UPDATE data SET time_to_start = ?", (start,))
