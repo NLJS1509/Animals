@@ -51,6 +51,7 @@ async def send_message():
 
     # create variables for work script
     a = 0
+    b = 0
     date = {}
     posts_clear = {"messages": []}
     period = await db.get_period()
@@ -110,7 +111,8 @@ async def send_message():
     time_to_up = await db.get_up()
     if not await is_work_time(time_to_up[0], time_to_sleep[0]):
         for i in ADMIN_ID:
-            await bot.send_message(i, f"Бот спит 😴\nОн проснется в {time_to_up[0]} и начнет рассылку", disable_notification=True)
+            await bot.send_message(i, f"Бот спит 😴\nОн проснется в {time_to_up[0]} и начнет рассылку",
+                                   disable_notification=True)
         time_now = pytz.timezone('Europe/Moscow').localize(datetime.now()).strftime('%H:%M')
         await asyncio.sleep(waiting_to_wake_up(time_now, time_to_up[0]))
 
@@ -123,7 +125,8 @@ async def send_message():
 
         if start_newsletter[0] != '0':
             for i in ADMIN_ID:
-                await bot.send_message(i, f"Установлено время начала рассылки. Она начнется в <b>{start_newsletter[0]}</b>",
+                await bot.send_message(i,
+                                       f"Установлено время начала рассылки. Она начнется в <b>{start_newsletter[0]}</b>",
                                        disable_notification=True)
             time_now = pytz.timezone('Europe/Moscow').localize(datetime.now()).strftime('%H:%M')
             await asyncio.sleep(waiting_to_wake_up(time_now, start_newsletter[0]))
@@ -131,7 +134,8 @@ async def send_message():
 
         # mailing launch message
         for i in ADMIN_ID:
-            await bot.send_message(i, f"Рассылка запущена!\nВсего постов: <b>{len(posts['messages'])}</b> шт.\nПериод рассылки: <b>{period[0]}</b> сек. ({round(int(period[0]) / 60, 1)} мин.)\nБот просыпается в <b>{time_to_up[0]}</b>\nУходит спать в <b>{time_to_sleep[0]}</b>")
+            await bot.send_message(i,
+                                   f"Рассылка запущена!\nВсего постов: <b>{len(posts['messages'])}</b> шт.\nПериод рассылки: <b>{period[0]}</b> сек. ({round(int(period[0]) / 60, 1)} мин.)\nБот просыпается в <b>{time_to_up[0]}</b>\nУходит спать в <b>{time_to_sleep[0]}</b>")
 
         # Shuffle
         random.shuffle(posts["messages"])
@@ -158,7 +162,8 @@ async def send_message():
 
                 if not await is_work_time(time_to_up[0], time_to_sleep[0]):
                     for i in ADMIN_ID:
-                        await bot.send_message(i, f"🔵 [INFO] Я ушел спать😴\nБуду в {time_to_up[0]}", disable_notification=True)
+                        await bot.send_message(i, f"🔵 [INFO] Я ушел спать😴\nБуду в {time_to_up[0]}",
+                                               disable_notification=True)
                     time_now = pytz.timezone('Europe/Moscow').localize(datetime.now()).strftime('%H:%M')
                     await asyncio.sleep(waiting_to_wake_up(time_now, time_to_up[0]))
                     for i in ADMIN_ID:
@@ -249,7 +254,9 @@ async def send_message():
                     elif post_type == "video":
                         path = post["file"]
                         try:
-                            if isinstance(post["text"], list):
+                            if not isinstance(post["text"], list):
+                                caption = post["text"]
+                            else:
                                 try:
                                     types = post["text"][0]["type"]
                                     if types == "text_link":
@@ -258,10 +265,9 @@ async def send_message():
                                         caption = ""
                                 except:
                                     caption = post["text"][0]
-                            else:
-                                caption = post["text"]
                             try:
-                                await bot.send_video(channel_id, FSInputFile(path), caption=caption, width=post["width"],
+                                await bot.send_video(channel_id, FSInputFile(path), caption=caption,
+                                                     width=post["width"],
                                                      height=post["height"], thumbnail=FSInputFile(post["thumbnail"]))
                             except:
                                 logging.warning(f"VIDEO NOT FOUND\n")
@@ -359,9 +365,10 @@ async def send_message():
                                    thumbnail=FSInputFile(post["thumbnail"]))
 
                     quantity -= 1
+                    b += 1
                     date[post["date_unixtime"]] = f"{quantity}, MG"
 
-                    if quantity == 0:
+                    if quantity == 0 or b == 9:
                         try:
                             await bot.send_media_group(channel_id, mg.build())
                         except:
@@ -370,6 +377,7 @@ async def send_message():
                                 await bot.send_message(i, f"🟡 [WARNING] Медиа группа не отправлена\nID: {post['id']}")
                         del date[post["date_unixtime"]]
                         a = 0
+                        b = 0
                         await asyncio.sleep(period[0])
 
                 # del post from json
